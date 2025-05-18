@@ -1,12 +1,16 @@
 <script setup>
 import { ref } from 'vue';
-import Header from './components/Header.vue';
+import Mobileheader from './components/Mobileheader.vue';
+import Webheader from './components/Webheader.vue';
+
+const sizes = useMonitorSize();
 </script>
 
 <template>
   <div>
-    <Header /> <!-- Header-Komponente, immer oben zu sehen -->
     <router-view />  <!--Inhalt der geöffneten Seite, wird aus der main.ts geladen--> 
+    <Mobileheader v-if="sizes.isMobile.value" />
+    <Webheader v-else />
   </div>
 </template>
 
