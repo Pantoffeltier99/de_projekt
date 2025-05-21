@@ -10,7 +10,7 @@ const sizes = useMonitorSize();
   <div>
     <Mobileheader v-if="sizes.isMobile.value" />
     <Webheader v-else />
-     <router-view />  <!--Inhalt der geöffneten Seite, wird aus der main.ts geladen--> 
+    <router-view />  <!--Inhalt der geöffneten Seite, wird aus der main.ts geladen--> 
   </div>
 </template>
 
