@@ -17,12 +17,24 @@ const router = createRouter({
         component: () => import('./components/Home.vue') // home page
     },
     {
-        path: '/about',
+        path: '/ueber-uns',
         component: () => import('./components/About.vue') // about page
     },
     {
-        path: '/contact',
+        path: '/kontakt',
         component: () => import('./components/Contact.vue')  // contact page
+    },
+    {
+      path: '/termine',
+      component: () => import('./components/Events.vue') // events page
+    },
+    {
+      path: '/gruppen',
+      component: () => import('./components/Groups.vue') // groups page 
+    },
+    {
+      path: '/packliste',
+      component: () => import('./components/Plist.vue') // packing list page
     },
   ]
 })
