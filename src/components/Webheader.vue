@@ -33,9 +33,9 @@
                             <a href="/packliste" class="block px-4 py-2 text-black hover:bg-blue-100">Packliste</a>
                             <a href="/gruppen" class="block px-4 py-2 text-black hover:bg-blue-100">Unsere Gruppen</a>
                             <!-- Diese Links sind auf kleinen Bildschirmen zusätzlich im Dropdown -->
-                            <a href="/home" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">START</a>
-                            <a href="/ueber-uns" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">ÜBER UNS</a>
-                            <a href="/kontakt" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">KONTAKT</a>
+                            <a href="/home" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Start</a>
+                            <a href="/ueber-uns" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Über Uns</a>
+                            <a href="/kontakt" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Kontakt</a>
                         </div>
                     </div>
                 </nav>
