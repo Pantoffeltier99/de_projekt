@@ -1,7 +1,7 @@
 <!-- Main Header, immer oben zu sehen-->
 
 <template>
-    <header class="bg-blue-800">
+    <header class="fixed top-0 left-0 w-full bg-blue-800 z-50">
         <div class="container mx-auto p-5 flex items-center justify-between">
             <!-- Logo und Titel -->
             <div class="flex items-center space-x-3">
@@ -20,6 +20,7 @@
                     <a href="/home" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden lg:block">START</a>
                     <a href="/ueber-uns" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden lg:block">ÜBER UNS</a>
                     <a href="/kontakt" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden lg:block">KONTAKT</a>
+                    <a href="/gruppen" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden lg:block">UNSERE GRUPPEN</a>
                     <div class="relative group">
                         <button class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition flex items-center">
                             MEHR
@@ -31,17 +32,19 @@
                             <!-- Diese Links sind IMMER im Dropdown -->
                             <a href="/termine" class="block px-4 py-2 text-black hover:bg-blue-100">Termine</a>
                             <a href="/packliste" class="block px-4 py-2 text-black hover:bg-blue-100">Packliste</a>
-                            <a href="/gruppen" class="block px-4 py-2 text-black hover:bg-blue-100">Unsere Gruppen</a>
+                            <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-black hover:bg-blue-100">F&F Fahrtenbedarf</a>
                             <!-- Diese Links sind auf kleinen Bildschirmen zusätzlich im Dropdown -->
+                            <a href="/gruppen" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Unsere Gruppen</a>
                             <a href="/home" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Start</a>
                             <a href="/ueber-uns" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Über Uns</a>
                             <a href="/kontakt" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Kontakt</a>
+
                         </div>
                     </div>
                 </nav>
             </div>
             <!-- Search Bar -->
-            <div class="relative flex items-center bg-white rounded-full shadow-md">
+            <!--<div class="relative flex items-center bg-white rounded-full shadow-md">
                 <input 
                     type="text" 
                     placeholder="Suchen..." 
@@ -56,7 +59,7 @@
                         class="h-5 w-5 object-contain"
                     />
                 </button>
-            </div>
+            </div>-->
         </div>
     </header>
 </template>
