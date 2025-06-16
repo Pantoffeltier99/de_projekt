@@ -1,11 +1,14 @@
 <!-- Homepage -->
 
 <template>
-    <div class="container mx-auto p-5">
-        <h1 class="text-5xl text-center font-bold">VCP STAMM NIMROD</h1>
-        <p class="text-center mt-4">Flensburger Straße 1 | Satrup</p>
-        <p class="text-center mt-4">Flensburger Straße 1 | Satrup</p>
+  <div>
+    <div class="relative w-full h-[600px]">
+      <img src="@/assets/NIMROD.png" class="w-full h-full object-cover" alt="Nimrod" />
     </div>
+    <div>
+      <h1 class="text-5xl text-center font-bold mt-10">HERZLICH WILLKOMMEN</h1>
+    </div>
+  </div>
 </template>
 
 <script setup>
