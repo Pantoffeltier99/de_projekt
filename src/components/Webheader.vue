@@ -17,10 +17,10 @@
             <div>
                 <nav class="flex space-x-6">
                     <!-- Hauptlinks, nur auf lg und größer sichtbar -->
-                    <a href="/home" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden lg:block">START</a>
+                    <a href="/home" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden md:block">START</a>
                     <a href="/ueber-uns" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden lg:block">ÜBER UNS</a>
-                    <a href="/kontakt" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden lg:block">KONTAKT</a>
-                    <a href="/gruppen" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden lg:block">UNSERE GRUPPEN</a>
+                    <a href="/kontakt" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden xl:block">KONTAKT</a>
+                    <a href="/gruppen" class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition hidden 2xl:block">UNSERE GRUPPEN</a>
                     <div class="relative group">
                         <button class="font-bold text-white hover:bg-blue-900 px-3 py-2 rounded transition flex items-center">
                             MEHR
@@ -34,32 +34,16 @@
                             <a href="/packliste" class="block px-4 py-2 text-black hover:bg-blue-100">Packliste</a>
                             <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-black hover:bg-blue-100">F&F Fahrtenbedarf</a>
                             <!-- Diese Links sind auf kleinen Bildschirmen zusätzlich im Dropdown -->
-                            <a href="/gruppen" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Unsere Gruppen</a>
+                            <a href="/gruppen" class="block px-4 py-2 text-black hover:bg-blue-100 md:hidden">Unsere Gruppen</a>
                             <a href="/home" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Start</a>
-                            <a href="/ueber-uns" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Über Uns</a>
-                            <a href="/kontakt" class="block px-4 py-2 text-black hover:bg-blue-100 lg:hidden">Kontakt</a>
+                            <a href="/ueber-uns" class="block px-4 py-2 text-black hover:bg-blue-100 xl:hidden">Über Uns</a>
+                            <a href="/kontakt" class="block px-4 py-2 text-black hover:bg-blue-100 2xl:hidden">Kontakt</a>
 
                         </div>
                     </div>
                 </nav>
             </div>
-            <!-- Search Bar -->
-            <!--<div class="relative flex items-center bg-white rounded-full shadow-md">
-                <input 
-                    type="text" 
-                    placeholder="Suchen..." 
-                    class="p-3 pl-5 w-64 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
-                />
-                <button 
-                    class="absolute right-2 px-4 py-2 bg-blue-800 text-white rounded-full hover:bg-blue-900 transition flex items-center justify-center"
-                >
-                    <img 
-                        src="@/assets/Search.png" 
-                        alt="Search" 
-                        class="h-5 w-5 object-contain"
-                    />
-                </button>
-            </div>-->
         </div>
     </header>
-</template>
+</template> -
+
