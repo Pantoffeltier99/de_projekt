@@ -14,7 +14,7 @@ export function useMonitorSize() {
     }
 
     const isMobile = () => {
-        return window.innerWidth <= 800 ? true : false;
+        return window.innerWidth <= 1000 ? true : false;
     }
 
     onMounted(() => {
