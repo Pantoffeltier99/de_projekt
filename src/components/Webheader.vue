@@ -94,7 +94,18 @@
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>
-                            <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300">F&F Fahrtenbedarf</a>
+                            <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="group flex items-center px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300">
+                                F&F Fahrtenbedarf
+                                <svg
+                                    class="ml-2 w-4 h-4 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 3h7v7m0 0L10 21l-7-7 11-11z" />
+                                </svg>
+                            </a>
                             <!-- Diese Links sind auf kleinen Bildschirmen zusätzlich im Dropdown -->
                             <router-link
                                 to="/gruppen"
