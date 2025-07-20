@@ -1,6 +1,10 @@
 <template>
   <aside id="default-sidebar" class="fixed top-0 right-0 z-50 w-64 h-screen transition-transform translate-x-0 bg-white" aria-label="Sidebar">
     <div>
+      <img src="@/assets/Stammeslogo.png" alt="Logo" class="h-10 w-10 object-contain mx-auto mt-4" />
+      <h2 class="text-center text-xl font-bold mt-2">STAMM NIMROD</h2>
+    </div>
+    <div>
       <nav class="space-y-2">
         <router-link
           to="/home"
