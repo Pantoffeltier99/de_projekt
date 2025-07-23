@@ -1,6 +1,6 @@
 <template>
   <header class="bg-blue-800">
-    <div class="container mx-auto p-5 flex items-center justify-between">
+    <div class="container mx-auto p-5 flex items-center justify-between z-40">
       <!-- Links: Logo und Titel -->
       <div class="flex items-center space-x-3">
         <img 

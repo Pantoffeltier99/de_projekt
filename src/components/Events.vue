@@ -40,7 +40,6 @@
                         <p class="text-sm text-gray-500 italic">Almke bei Wolfsburg</p>
                     </div>
                 </div>
-
                 
 
             </div>
