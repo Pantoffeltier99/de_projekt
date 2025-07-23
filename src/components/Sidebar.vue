@@ -79,7 +79,7 @@
             class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
           ></span>
         </router-link>
-        <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="font-bold text-black px-3 py-2 rounded transition-all duration-300 flex flex-col items-start group">F&F Fahrtenbedarf</a>
+        <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="font-bold text-black px-3 py-2 rounded transition-all duration-300 flex flex-col items-start group">F&F FAHRTENBEDARF</a>
       </nav>
     </div>
   </aside>

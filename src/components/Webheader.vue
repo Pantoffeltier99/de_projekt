@@ -1,8 +1,26 @@
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { useRoute } from 'vue-router';
+const isScrolled = ref(false);
+const route = useRoute();
+const onScroll = () => {
+  isScrolled.value = window.scrollY > 10;
+};
+onMounted(() => {
+  window.addEventListener('scroll', onScroll);
+});
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll);
+});
+</script>
 <!-- Main Header, immer oben zu sehen-->
 
 <template>
-    <header class="fixed top-0 left-0 w-full bg-blue-800 z-50">
-        <div class="container mx-auto p-5 flex items-center justify-between">
+    <header :class="['fixed top-0 left-0 w-full z-50 transition-colors duration-300',
+      (route.path === '/' || route.path === '/home')
+        ? (isScrolled ? 'bg-blue-800 bg-opacity-95' : 'bg-transparent')
+        : 'bg-blue-800']">
+        <div class="container mx-auto p-2 flex items-center justify-between">
             <!-- Links: Logo und Titel -->
             <div class="flex items-center space-x-3">
                 <img 
@@ -52,14 +70,14 @@
                         ></span>
                     </router-link>
                     <router-link
-                        to="/gruppen"
+                        to="/termine"
                         class="font-bold text-white px-3 py-2 rounded transition-all duration-300 hidden 2xl:flex flex-col items-center group"
                         active-class="active-link"
                     >
-                        UNSERE GRUPPEN
+                        TERMINE
                         <span
                             class="block h-1 rounded mt-1 bg-white transition-all duration-300"
-                            :class="[$route.path === '/gruppen' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
+                            :class="[$route.path === '/termine' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
                         ></span>
                     </router-link>
                     <div class="relative group flex flex-col items-center">
@@ -73,13 +91,13 @@
                         <div class="absolute right-0 top-full w-40 bg-white rounded shadow-lg opacity-0 scale-y-75 pointer-events-none group-hover:opacity-100 group-hover:scale-y-100 group-hover:pointer-events-auto transition-all duration-300 origin-top z-10">
                             <!-- Diese Links sind IMMER im Dropdown -->
                             <router-link
-                                to="/termine"
+                                to="/gruppen"
                                 class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300 group"
                                 active-class="active-link"
                             >
-                                Termine
+                                Unsere Gruppen
                                 <span
-                                    v-if="$route.path === '/termine'"
+                                    v-if="$route.path === '/gruppen'"
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>

@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import Mobileheader from './components/Mobileheader.vue'; // unterschiedliche Header für mobile und Desktop
 import Webheader from './components/Webheader.vue';
 import Sidebar from './components/Sidebar.vue';
+import Footer from './components/Footer.vue';
 import { useMonitorSize } from './composables/useMonitorsize.ts';
 const sizes = useMonitorSize();
 const sidebarOpen = ref(false);
@@ -16,16 +17,17 @@ const isDark = useDark({
 </script>
 
 <template>
-  <div>
+  <div class="min-h-screen flex flex-col">
     <Sidebar v-if="sizes.isMobile.value && sidebarOpen" @close="sidebarOpen = false" />
     <div
         v-if="sidebarOpen"
         class="fixed inset-0 z-40 bg-black/30 backdrop-blur-sm"
-        @click="sidebarOpen = false"
-      ></div>
+        @click="sidebarOpen = false">
+    </div>
     <Mobileheader v-if="sizes.isMobile.value" @open-sidebar="sidebarOpen = true" />
     <Webheader v-else />
-    <router-view />  <!--Inhalt der geöffneten Seite, wird aus der main.ts geladen--> 
+    <router-view class="flex-1" />
+    <Footer />
   </div>
 </template>
 
