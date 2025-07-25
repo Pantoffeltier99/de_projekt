@@ -2,7 +2,7 @@
     <div class="container mx-auto p-5 pt-24">
 
         <div class="mb-8">
-            <h4 class="text-7xl font-bold md:text-left text-center">NÄCHSTE TERMINE</h4>
+            <h4 class="text-7xl font-bold md:text-left text-blue-950 text-center">NÄCHSTE TERMINE</h4>
         </div>
 
         <div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6 xl-gap-8">
@@ -16,7 +16,7 @@
 
                 <div class="mt-2 mb-4 rounded-2xl">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
-                    <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
+                    <h5 class="text-3xl font-bol mt-2 mb-4">Rieneck 2025</h5>
                     <p class="text-jusify mt-2 mb-4">
                         Dieses Jahr in den Sommerferien fahren wir zusammen mit dem Stamm Heide zehn Tage auf die Burg Rieneck.
                     </p>
