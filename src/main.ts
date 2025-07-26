@@ -26,13 +26,11 @@ const router = createRouter({
     {
       path: '/termine',
       component: () => import('./components/Events.vue'), // events page
-      children: [
-        {
-          path: 'vergangenes',
-          component: () => import('./components/Eventspast.vue') // past events page
-        }]
     },
-
+    {
+          path: '/termine/vergangenes',
+          component: () => import('./components/Eventspast.vue') // past events page
+    },
     {
       path: '/gruppen',
       component: () => import('./components/Groups.vue') // groups page 

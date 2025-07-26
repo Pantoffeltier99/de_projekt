@@ -1,8 +1,8 @@
 <template>
-    <div class="container mx-auto p-5 pt-24">
+    <div class="container mx-auto p-5 pt-24 bg-blue-50">
 
         <div class="mb-8">
-            <h4 class="text-7xl font-bold md:text-left text-blue-950 text-center">NÄCHSTE TERMINE</h4>
+            <h4 class="md:text-7xl text-5xl font-bold text-blue-950 text-center">NÄCHSTE TERMINE</h4>
         </div>
 
         <div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6 xl-gap-8">
@@ -14,7 +14,7 @@
                 </div>
                 
 
-                <div class="mt-2 mb-4 rounded-2xl">
+                <div class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
                     <p class="text-jusify mt-2 mb-4">
@@ -28,7 +28,7 @@
 
                 <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
 
-                <div class="mt-2 mb-4 rounded-2xl">
+                <div class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md">
                     <img src="https://bundeslager.vcp.de/wp-content/uploads/2025/03/20220806-142752_VCP-Bahl-1-scaled.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Bundeslager 2026</h5>
                     <p class="text-jusify mt-2 mb-4">
@@ -50,7 +50,7 @@
                     <hr class="w-32 h-1 mx-auto rounded-sm my-1 dark:bg-blue-800 md:mr-0">
                 </div>
 
-                <div class="flex items-center gap-4 rounded-2xl">
+                <div class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md">
                     <img src="https://www.nordkirche.de/fileadmin/_processed_/c/e/csm_pfingstlager_vcp2018-1_0027759e3c.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
                     <div>
                         <h5 class="text-2xl font-bold">Pfingstlager 2025</h5>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 rounded-2xl">
+                <div class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md">
                     <img src="https://vcp.sh/images/thumbnails/images/Nola2024_2_Tim_Sekulic_k-fill-450x290.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
                     <div>
                         <h5 class="text-2xl font-bold">Nordlager 2024</h5>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 
-                <div class="flex items-center gap-4 rounded-2xl">
+                <div class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md">
                     <img src="https://vcp.de/pfadfinden/wp-content/uploads/2020/12/Luftbild_VCP-Fabian-Wisner-Beitragsbild-scaled.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
                     <div>
                         <h5 class="text-2xl font-bold">Bundeslager 2022</h5>
@@ -95,7 +95,7 @@
                 <button class="mt-4 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
                     <router-link
                         to="/termine/vergangenes"
-                        class="font-bold text-white px-3 py-2 rounded transition-all duration-300 hidden 2xl:flex flex-col items-center group"
+                        class="font-bold text-white md:px-11 px-30 py-2 rounded transition-all duration-300 2xl:flex flex-col items-center group"
                         active-class="active-link"
                     >
                         Mehr anzeigen
