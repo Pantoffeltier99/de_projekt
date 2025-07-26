@@ -74,13 +74,24 @@
           </div>
 
         </div>
+        
       </div>
-      
+        <div class="container mx-auto p-0 flex flex-col items-center">
+          <button class="mt-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
+            <router-link
+                to="/termine"
+                class="font-bold text-white px-30 py-2 rounded transition-all duration-300 2xl:flex flex-col items-center group"
+                active-class="active-link"
+            >
+                Mehr anzeigen
+            </router-link>
+          </button>
+        </div>
       <div>
 
       </div>
 
-      <div class="container mx-auto p-5 pt-24">
+      <div class="container mx-auto p-3 pt-24">
         <h1 class="text-3xl md:text-5xl font-bold text-center text-blue-950">Gruppenstunden</h1>
         <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
         <div class="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 xl-gap-8">
@@ -91,8 +102,9 @@
 
             <!-- Der Text über dem Bild -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
-                <h3 class="text-2xl font-semibold text-center mb-2">Wölflinge</h3>
-                <p>Die Anmeldung für das Lager auf der Burg Rieneck ist jetzt offen. Meldet euch schnell an!</p>
+                <h3 class="text-3xl font-semibold text-center mb-2">Wölflinge</h3>
+                <p class="text-center font-semibold p-1">6 bis 10 Jahre</p>
+                <p class="text-center font-semibold p-1">16:45 bis 18:15, Donnerstags</p>
             </div>
           </div>
 
@@ -102,8 +114,9 @@
 
             <!-- Der Text über dem Bild -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
-                <h3 class="text-2xl font-semibold text-center mb-2">Jungpfadfinder</h3>
-                <p>Die Anmeldung für das Lager auf der Burg Rieneck ist jetzt offen. Meldet euch schnell an!</p>
+                <h3 class="text-3xl font-semibold text-center mb-2">Jungpfadfinder</h3>
+                <p class="text-center font-semibold p-1">11 bis 13 Jahre</p>
+                <p class="text-center font-semibold p-1">16:30 bis 18:00, Mitwochs</p>
             </div>
           </div>
 
@@ -113,18 +126,30 @@
 
             <!-- Der Text über dem Bild -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
-                <h3 class="text-2xl font-semibold text-center mb-2">Pfadfinder & Ranger*Rover</h3>
-                <p>Die Anmeldung für das Lager auf der Burg Rieneck ist jetzt offen. Meldet euch schnell an!</p>
+                <h3 class="text-3xl font-semibold text-center mb-2">Pfadfinder & Ranger*Rover</h3>
+                <p class="text-center font-semibold p-1">ab 14 Jahren</p>
+                <p class="text-center font-semibold p-1">18:15 bis 19:45, Donnerstags</p>
             </div>
           </div>
 
         </div>
-
       </div>
-
-
+      </div>
+        <div class="container mx-auto p-3 flex flex-col items-center">
+          <button class="mt-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
+            <router-link
+                to="/gruppen"
+                class="font-bold text-white px-30 py-2 rounded transition-all duration-300 2xl:flex flex-col items-center group"
+                active-class="active-link"
+            >
+                Infos zu den Gruppenstunden
+            </router-link>
+          </button>
+        </div>
+      <div>
     </div>
   </div>
+
 </template>
 
 <script setup>
