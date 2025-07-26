@@ -16,7 +16,7 @@
 
                 <div class="mt-2 mb-4 rounded-2xl">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
-                    <h5 class="text-3xl font-bol mt-2 mb-4">Rieneck 2025</h5>
+                    <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
                     <p class="text-jusify mt-2 mb-4">
                         Dieses Jahr in den Sommerferien fahren wir zusammen mit dem Stamm Heide zehn Tage auf die Burg Rieneck.
                     </p>
@@ -93,7 +93,13 @@
                 </div>
 
                 <button class="mt-4 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
-                    Mehr anzeigen
+                    <router-link
+                        to="/termine/vergangenes"
+                        class="font-bold text-white px-3 py-2 rounded transition-all duration-300 hidden 2xl:flex flex-col items-center group"
+                        active-class="active-link"
+                    >
+                        Mehr anzeigen
+                    </router-link>
                 </button>
             </div>
         </div>
