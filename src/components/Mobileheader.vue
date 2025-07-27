@@ -1,6 +1,7 @@
 <template>
   <header class="bg-blue-800">
     <div class="container mx-auto p-2 flex items-center justify-between z-40">
+
       <!-- Links: Logo und Titel -->
       <div class="flex items-center space-x-3">
         <img 
@@ -12,6 +13,7 @@
           NIMROD
         </h1>
       </div>
+
       <!-- Rechts: Icons und Menü -->
       <div class="flex items-center space-x-2">
         <!-- Instagram -->
@@ -41,6 +43,7 @@
           </svg>
         </button>
       </div>
+      
     </div>
   </header>
 </template>

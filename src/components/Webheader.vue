@@ -21,6 +21,7 @@ onUnmounted(() => {
         ? (isScrolled ? 'bg-blue-800 bg-opacity-95' : 'bg-transparent')
         : 'bg-blue-800']">
         <div class="container mx-auto p-2 flex items-center justify-between">
+
             <!-- Links: Logo und Titel -->
             <div class="flex items-center space-x-3">
                 <img 
@@ -32,9 +33,11 @@ onUnmounted(() => {
                     STAMM NIMROD
                 </h1>
             </div>
+
             <!-- Rechts: Navigation, Icons -->
             <div class="flex items-center space-x-4">
                 <nav class="flex space-x-4 items-center">
+
                     <!-- Hauptlinks, nur auf lg und größer sichtbar -->
                     <router-link
                         to="/home"
@@ -47,6 +50,7 @@ onUnmounted(() => {
                             :class="[$route.path === '/home' || $route.name === 'home' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
                         ></span>
                     </router-link>
+
                     <router-link
                         to="/ueber-uns"
                         class="font-bold text-white px-3 py-2 rounded transition-all duration-300 hidden lg:flex flex-col items-center group"
@@ -58,6 +62,7 @@ onUnmounted(() => {
                             :class="[$route.path === '/ueber-uns' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
                         ></span>
                     </router-link>
+
                     <router-link
                         to="/kontakt"
                         class="font-bold text-white px-3 py-2 rounded transition-all duration-300 hidden xl:flex flex-col items-center group"
@@ -69,6 +74,7 @@ onUnmounted(() => {
                             :class="[$route.path === '/kontakt' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
                         ></span>
                     </router-link>
+
                     <router-link
                         to="/termine"
                         class="font-bold text-white px-3 py-2 rounded transition-all duration-300 hidden 2xl:flex flex-col items-center group"
@@ -80,6 +86,7 @@ onUnmounted(() => {
                             :class="[$route.path === '/termine' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
                         ></span>
                     </router-link>
+
                     <div class="relative group flex flex-col items-center">
                         <button class="font-bold text-white px-3 py-2 rounded transition flex items-center">
                             MEHR
@@ -87,9 +94,24 @@ onUnmounted(() => {
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                             </svg>
                         </button>
+
                         <span class="block h-1 mt-1" style="visibility: hidden;">&nbsp;</span>
+
                         <div class="absolute right-0 top-full w-40 bg-white rounded shadow-lg opacity-0 scale-y-75 pointer-events-none group-hover:opacity-100 group-hover:scale-y-100 group-hover:pointer-events-auto transition-all duration-300 origin-top z-10">
+                            
                             <!-- Diese Links sind IMMER im Dropdown -->
+                            <router-link
+                                to="/mitglied-werden"
+                                class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300 group"
+                                active-class="active-link"
+                            >
+                                Mitglied werden
+                                <span
+                                    v-if="$route.path === '/mitglied-werden'"
+                                    class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
+                                ></span>
+                            </router-link>
+
                             <router-link
                                 to="/gruppen"
                                 class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300 group"
@@ -101,6 +123,7 @@ onUnmounted(() => {
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>
+
                             <router-link
                                 to="/packliste"
                                 class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300 group"
@@ -112,6 +135,7 @@ onUnmounted(() => {
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>
+
                             <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="group flex items-center px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300">
                                 F&F Fahrtenbedarf
                                 <svg
@@ -124,6 +148,7 @@ onUnmounted(() => {
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 3h7v7m0 0L10 21l-7-7 11-11z" />
                                 </svg>
                             </a>
+
                             <!-- Diese Links sind auf kleinen Bildschirmen zusätzlich im Dropdown -->
                             <router-link
                                 to="/gruppen"
@@ -136,6 +161,7 @@ onUnmounted(() => {
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>
+
                             <router-link
                                 to="/home"
                                 class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 lg:hidden transition-all duration-300 group"
@@ -147,6 +173,7 @@ onUnmounted(() => {
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>
+
                             <router-link
                                 to="/ueber-uns"
                                 class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 xl:hidden transition-all duration-300 group"
@@ -158,6 +185,7 @@ onUnmounted(() => {
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>
+
                             <router-link
                                 to="/kontakt"
                                 class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 2xl:hidden transition-all duration-300 group"
@@ -169,11 +197,13 @@ onUnmounted(() => {
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>
+
                         </div>
                     </div>
                 </nav>
                 <!-- Icons: Instagram & Mail -->
                 <div class="flex items-center space-x-2">
+
                     <a
                         href="https://www.instagram.com/vcp_stamm_nimrod/"
                         target="_blank"
@@ -183,6 +213,7 @@ onUnmounted(() => {
                     >
                         <img class="w-8 h-8 hover:bg-blue-900 rounded transition-all duration-300" src="@/assets/instagram-new.png" alt="Insta">
                     </a>
+
                     <a
                         href="mailto:kontakt.nimrod@vcp.sh"
                         target="_blank"
@@ -192,6 +223,7 @@ onUnmounted(() => {
                     >
                         <img class="w-7 h-7 hover:bg-blue-900 rounded transition-all duration-300" src="@/assets/mail.png" alt="Mail">
                     </a>
+                    
                 </div>
             </div>
         </div>

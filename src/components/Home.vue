@@ -18,6 +18,7 @@
       <div class="container mx-auto p-5 pt-24"> 
         <div class="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-4 md:gap-6 xl-gap-8">
 
+          <!-- Nächstes Lager -->
           <div>
               <div class="mt-0 mb-0 rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Nächstes Lager</h1>
@@ -33,10 +34,10 @@
                         <p class="text-sm text-gray-500 italic">Rieneck</p>
                     </div>
                   </div>
-
               </div>
           </div>
 
+          <!-- Kürzlich -->
           <div>       
               <div class="mt-0 mb-0 rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Kürzlich</h1>
@@ -55,6 +56,7 @@
               </div>
           </div>
 
+          <!-- Wichtig -->
           <div>
               <div class="mt-0 mb-0 rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Wichtig</h1>
@@ -74,23 +76,21 @@
           </div>
 
         </div>
-        
-      </div>
-        <div class="container mx-auto p-0 flex flex-col items-center">
-          <button class="mt-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
-            <router-link
-                to="/termine"
-                class="font-bold text-white px-30 py-2 rounded transition-all duration-300 2xl:flex flex-col items-center group"
-                active-class="active-link"
-            >
-                Mehr anzeigen
-            </router-link>
-          </button>
-        </div>
-      <div>
-
       </div>
 
+      <div class="container mx-auto p-0 flex flex-col items-center">
+        <button class="mt-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
+          <router-link
+              to="/termine"
+              class="font-bold text-white px-30 py-2 rounded transition-all duration-300 2xl:flex flex-col items-center group"
+              active-class="active-link"
+          >
+              Mehr anzeigen
+          </router-link>
+        </button>
+      </div>
+
+      <!-- Gruppenstunden -->
       <div class="container mx-auto p-3 pt-24">
         <h1 class="text-3xl md:text-5xl font-bold text-center text-blue-950">Gruppenstunden</h1>
         <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
@@ -100,7 +100,7 @@
             <!-- Das Bild -->
             <img src="@\assets\Wölflinge.png" class="w-full h-30 object-cover rounded-lg">
 
-            <!-- Der Text über dem Bild -->
+            <!-- Wölflinge -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
                 <h3 class="text-3xl font-semibold text-center mb-2">Wölflinge</h3>
                 <p class="text-center font-semibold p-1">6 bis 10 Jahre</p>
@@ -112,7 +112,7 @@
             <!-- Das Bild -->
             <img src="@\assets\Jupfi.png" class="w-full h-30 object-cover rounded-lg">
 
-            <!-- Der Text über dem Bild -->
+            <!-- Jupfis -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
                 <h3 class="text-3xl font-semibold text-center mb-2">Jungpfadfinder</h3>
                 <p class="text-center font-semibold p-1">11 bis 13 Jahre</p>
@@ -124,7 +124,7 @@
             <!-- Das Bild -->
             <img src="@\assets\PfadiRR.png" class="w-full h-30 object-cover rounded-lg">
 
-            <!-- Der Text über dem Bild -->
+            <!-- Pfad RR -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
                 <h3 class="text-3xl font-semibold text-center mb-2">Pfadfinder & Ranger*Rover</h3>
                 <p class="text-center font-semibold p-1">ab 14 Jahren</p>
@@ -134,12 +134,13 @@
 
         </div>
       </div>
+
       </div>
         <div class="container mx-auto p-3 flex flex-col items-center">
           <button class="mt-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
             <router-link
                 to="/gruppen"
-                class="font-bold text-white px-30 py-2 rounded transition-all duration-300 2xl:flex flex-col items-center group"
+                class="font-bold text-white px-13 py-2 rounded transition-all duration-300 2xl:flex flex-col items-center group"
                 active-class="active-link"
             >
                 Infos zu den Gruppenstunden
@@ -147,9 +148,9 @@
           </button>
         </div>
       <div>
+
     </div>
   </div>
-
 </template>
 
 <script setup>
