@@ -149,6 +149,29 @@
         </div>
       <div>
 
+      <div>
+        <div class="container mx-auto p-9 flex flex-col mt-10 mb-10 items-center">
+          <router-link
+            to="/mitmachen"
+            class="group"
+            active-class="active-link"
+          >
+            <button
+              class="w-full max-w-xs sm:max-w-sm md:max-w-md 
+                       px-8 md:px-10 py-7 md:py-9 
+                        text-4xl md:text-6xl
+                        font-bold text-white 
+                        bg-gradient-to-r from-blue-800 to-yellow-500 
+                        rounded-lg hover:from-blue-900 hover:to-yellow-600 transition-all duration-300
+                        animate-bounce"
+            >
+              MACH MIT!
+            </button>
+          </router-link>
+        </div>
+      </div>
+
+      
     </div>
   </div>
 </template>

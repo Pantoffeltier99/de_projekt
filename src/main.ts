@@ -40,7 +40,7 @@ const router = createRouter({
       component: () => import('./components/Plist.vue') // packing list page
     },
     {
-      path: '/mitglied-werden',
+      path: '/mitmachen',
       component: () => import('./components/Member.vue') // join page
     }
   ]

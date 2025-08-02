@@ -71,15 +71,15 @@
           ></span>
         </router-link>
         <router-link
-          to="/mitglied-werden"
+          to="/mitmachen"
           class="font-bold text-black px-3 py-2 rounded transition-all duration-300 flex flex-col items-start group"
           active-class="active-link"
           @click="$emit('close')"
         >
-          MITGLIED WERDEN
+          MITMACHEN
           <span
             class="block h-1 rounded mt-1 bg-black transition-all duration-300"
-            :class="[$route.path === '/mitglied-werden' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
+            :class="[$route.path === '/mitmachen' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
           ></span>
         </router-link>
         <router-link

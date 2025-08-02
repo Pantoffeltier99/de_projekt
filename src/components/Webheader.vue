@@ -101,13 +101,13 @@ onUnmounted(() => {
                             
                             <!-- Diese Links sind IMMER im Dropdown -->
                             <router-link
-                                to="/mitglied-werden"
+                                to="/mitmachen"
                                 class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300 group"
                                 active-class="active-link"
                             >
-                                Mitglied werden
+                                Mitmachen
                                 <span
-                                    v-if="$route.path === '/mitglied-werden'"
+                                    v-if="$route.path === '/mitmachen'"
                                     class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
                                 ></span>
                             </router-link>
