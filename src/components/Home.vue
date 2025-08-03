@@ -10,7 +10,6 @@
     </div>
 
     <div>
-
       <div class="container mx-auto xl:p-5 p-0 pt-24">
         <h1 class="md:text-8xl text-4xl text-center font-bold xl:mt-10 mt-0 text-blue-950">Raus aus dem Alltag, rein ins Abenteuer!</h1>
       </div>
@@ -23,8 +22,8 @@
               <div class="mt-0 mb-0 rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Nächstes Lager</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
-                  <div class="bg-blue-50 shadow-md p-5 rounded-2xl">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
+                  <div class="bg-white shadow-md p-5 rounded-2xl">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
                     <p class="text-jusify mt-2 mb-4">
                         Dieses Jahr in den Sommerferien fahren wir zusammen mit dem Stamm Heide zehn Tage auf die Burg Rieneck.
@@ -42,7 +41,7 @@
               <div class="mt-0 mb-0 rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Kürzlich</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
-                  <div class="bg-blue-50 shadow-md p-5 rounded-2xl">
+                  <div class="bg-white shadow-md p-5 rounded-2xl">
                     <img src="https://vcp.sh/images/Pfila2023_2.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Pfingstlager 2025</h5>
                     <p class="text-jusify mt-2 mb-4">
@@ -61,7 +60,7 @@
               <div class="mt-0 mb-0 rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Wichtig</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
-                  <div class="bg-blue-50 shadow-md p-5 rounded-2xl">
+                  <div class="bg-white shadow-md p-5 rounded-2xl">
                     <img src="https://as2.ftcdn.net/v2/jpg/01/62/17/79/1000_F_162177937_uTe0UImsLygFsJMkMooYagoBP55rK3B5.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Ferien</h5>
                     <p class="text-jusify mt-2 mb-4">
@@ -98,7 +97,7 @@
 
           <div class="relative rounded-lg shadow-md overflow-hidden">
             <!-- Das Bild -->
-            <img src="@\assets\Wölflinge.png" class="w-full h-30 object-cover rounded-lg">
+            <img src="@\assets\Wölflinge.png" class="w-full md:h-30 h-40 object-cover rounded-lg">
 
             <!-- Wölflinge -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
@@ -110,7 +109,7 @@
 
           <div class="relative rounded-lg shadow-md overflow-hidden">
             <!-- Das Bild -->
-            <img src="@\assets\Jupfi.png" class="w-full h-30 object-cover rounded-lg">
+            <img src="@\assets\Jupfi.png" class="w-full md:h-30 h-40 object-cover rounded-lg">
 
             <!-- Jupfis -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
@@ -122,7 +121,7 @@
 
           <div class="relative rounded-lg shadow-md overflow-hidden">
             <!-- Das Bild -->
-            <img src="@\assets\PfadiRR.png" class="w-full h-30 object-cover rounded-lg">
+            <img src="@\assets\PfadiRR.png" class="w-full md:h-30 h-40 object-cover rounded-lg">
 
             <!-- Pfad RR -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
@@ -171,6 +170,20 @@
         </div>
       </div>
 
+      <div>
+        <a
+          href="https://fahrtenbedarf.de/"
+          target="_blank"
+          rel="noopener noreferrer">
+            <div class="bg-white shadow-md p-5 rounded-2xl container mx-auto md:w-200 w-100">
+              <img src="https://www.fahrtenbedarf.de/media/fb/48/d9/1712389706/fahrtenbedarflogo.png" alt="Bundeslager 2022" class="w-full h-full object-cover rounded-lg">
+              <h5 class="text-3xl font-bold mt-2 mb-4"></h5>
+              <p class="text-center mt-2 mb-4">
+                  Unser Sponsor Fahrtenbedarf bietet eine große Auswahl an Pfadfinderbedarf und Outdoor-Ausrüstung.
+              </p>
+            </div>
+        </a>
+      </div>
       
     </div>
   </div>
