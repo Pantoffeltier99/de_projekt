@@ -5,6 +5,11 @@ import Webheader from './components/Webheader.vue';
 import Sidebar from './components/Sidebar.vue';
 import Footer from './components/Footer.vue';
 import { useMonitorSize } from './composables/useMonitorsize.ts';
+import Cookies from '@/components/Cookies.vue'
+import { useCookieStore } from '@/stores/cookieStore'
+
+const cookieStore = useCookieStore()
+cookieStore.loadFromStorage()
 const sizes = useMonitorSize();
 const sidebarOpen = ref(false);
 import { useDark } from '@vueuse/core';
@@ -18,6 +23,7 @@ const isDark = useDark({
 
 <template>
   <div class="min-h-screen flex flex-col">
+    <Cookies />
     <Sidebar v-if="sizes.isMobile.value && sidebarOpen" @close="sidebarOpen = false" />
     <div
         v-if="sidebarOpen"
