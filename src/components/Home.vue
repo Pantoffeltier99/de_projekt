@@ -14,7 +14,7 @@
         <h1 class="md:text-8xl text-4xl text-center font-bold xl:mt-10 mt-0 text-blue-950">Raus aus dem Alltag, rein ins Abenteuer!</h1>
       </div>
 
-      <div class="container mx-auto p-5 pt-24"> 
+      <div class="container mx-auto p-5 pt-24 xl:mt-8 md:mt-5 mt-0 xl:mb-8 md:mb-5 mb-0"> 
         <div class="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-4 md:gap-6 xl-gap-8">
 
           <!-- Nächstes Lager -->
@@ -38,7 +38,7 @@
 
           <!-- Kürzlich -->
           <div>       
-              <div class="mt-0 mb-0 rounded-2xl">
+              <div class="rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Kürzlich</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
                   <div class="bg-white shadow-md p-5 rounded-2xl">
@@ -77,7 +77,7 @@
         </div>
       </div>
 
-      <div class="container mx-auto p-0 flex flex-col items-center">
+      <div class="container mx-auto p-0 flex flex-col items-center mb-10">
         <button class="mt-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
           <router-link
               to="/termine"
@@ -90,14 +90,14 @@
       </div>
 
       <!-- Gruppenstunden -->
-      <div class="container mx-auto p-3 pt-24">
+      <div class="container mx-auto p-3 pt-24 mt-10">
         <h1 class="text-3xl md:text-5xl font-bold text-center text-blue-950">Gruppenstunden</h1>
         <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
         <div class="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 xl-gap-8">
 
           <div class="relative rounded-lg shadow-md overflow-hidden">
             <!-- Das Bild -->
-            <img src="@\assets\Wölflinge.png" class="w-full md:h-30 h-40 object-cover rounded-lg">
+            <img src="@\assets\Wölflinge.png" class="w-full h-40 object-cover rounded-lg">
 
             <!-- Wölflinge -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
@@ -109,7 +109,7 @@
 
           <div class="relative rounded-lg shadow-md overflow-hidden">
             <!-- Das Bild -->
-            <img src="@\assets\Jupfi.png" class="w-full md:h-30 h-40 object-cover rounded-lg">
+            <img src="@\assets\Jupfi.png" class="w-full h-40 object-cover rounded-lg">
 
             <!-- Jupfis -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
@@ -121,7 +121,7 @@
 
           <div class="relative rounded-lg shadow-md overflow-hidden">
             <!-- Das Bild -->
-            <img src="@\assets\PfadiRR.png" class="w-full md:h-30 h-40 object-cover rounded-lg">
+            <img src="@\assets\PfadiRR.png" class="w-full h-40 object-cover rounded-lg">
 
             <!-- Pfad RR -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
@@ -135,7 +135,7 @@
       </div>
 
       </div>
-        <div class="container mx-auto p-3 flex flex-col items-center">
+        <div class="container mx-auto p-3 flex flex-col mb-10 items-center">
           <button class="mt-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
             <router-link
                 to="/gruppen"
@@ -149,7 +149,7 @@
       <div>
 
       <div>
-        <div class="container mx-auto p-9 flex flex-col mt-10 mb-10 items-center">
+        <div class="container mx-auto p-9 flex flex-col mt-10 md:mt-20 md:mb-20 mb-10 items-center">
           <router-link
             to="/mitmachen"
             class="group"

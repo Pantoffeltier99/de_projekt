@@ -11,15 +11,23 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="js">
 import { useCookieStore } from '@/stores/cookieStore'
 
 const cookieStore = useCookieStore()
 
 function accept() {
-  cookieStore.acceptCookies()
+  if (typeof cookieStore.acceptCookies === 'function') {
+    cookieStore.acceptCookies()
+  } else {
+    console.error('acceptCookies method not found in cookieStore')
+  }
 }
 function reject() {
-  cookieStore.rejectCookies()
+  if (typeof cookieStore.rejectCookies === 'function') {
+    cookieStore.rejectCookies()
+  } else {
+    console.error('rejectCookies method not found in cookieStore')
+  }
 }
 </script>

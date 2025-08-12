@@ -116,7 +116,6 @@
 
 <script>
 import Cookies from 'js-cookie'
-
 export default {
   name: "Packliste",
   data() {
@@ -164,6 +163,7 @@ export default {
     }
   },
   created() {
+    this.initCheckedItems()
     this.loadFromCookie()
   },
   methods: {
@@ -175,10 +175,17 @@ export default {
       const saved = Cookies.get('packlisteChecked')
       if (saved) {
         try {
-          this.checkedItems = JSON.parse(saved)
+          const parsed = JSON.parse(saved)
+          // Ensure all keys exist
+          this.initCheckedItems()
+          Object.keys(parsed).forEach(key => {
+            if (key in this.checkedItems) {
+              this.checkedItems[key] = parsed[key]
+            }
+          })
         } catch (e) {
           // Fehler ignorieren und neuen State nehmen
-          this.checkedItems = {}
+          this.initCheckedItems()
         }
       } else {
         // Init alle keys als false
