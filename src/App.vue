@@ -7,6 +7,7 @@ import Footer from './components/Footer.vue';
 import { useMonitorSize } from './composables/useMonitorsize.ts';
 import Cookies from '@/components/Cookies.vue'
 import { useCookieStore } from '@/stores/cookieStore'
+import ScrollToTop from '@/components/ScrollToTop.vue';
 
 const cookieStore = useCookieStore()
 cookieStore.loadFromStorage()
@@ -24,6 +25,7 @@ const isDark = useDark({
 <template>
   <div class="min-h-screen flex flex-col">
     <Cookies />
+    <ScrollToTop />
     <Sidebar v-if="sizes.isMobile.value && sidebarOpen" @close="sidebarOpen = false" />
     <div
         v-if="sidebarOpen"
