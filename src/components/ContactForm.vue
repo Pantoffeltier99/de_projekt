@@ -7,6 +7,8 @@ import FormTextarea from '@/components/FormTextarea.vue';
 const title = 'Kontaktformular';
 const showForm = ref(true); // <-- als ref deklarieren
 const successMessage = ref('');
+const fileInputRef = ref(null);
+
 
 const initialContactForm = {
     name: '',
@@ -67,6 +69,13 @@ function resetForm() {
     }, 2000);
 }
 
+function removeFile() {
+    contactForm.file = null;
+    if (fileInputRef.value) {
+        fileInputRef.value.value = null;
+    }
+}
+
 async function onSubmit() {
     if (isFormValid.value) {
         const formData = new FormData();
@@ -99,9 +108,10 @@ async function onSubmit() {
 
 <template>
     <div class="bg-blue-50">
-        <div class="container mx-auto p-5 pt-24">
+        <div class="container mx-auto p-10 pt-24">
             <div class="container mx-auto p-5 bg-white rounded-lg shadow-md">
-                <h1 class="text-2xl font-bold mb-4">{{ title }}</h1>
+                <h1 class="text-2xl font-bold">{{ title }}</h1>
+                <hr class="w-48 h-1 mx-auto rounded-sm dark:bg-blue-800 mb-4 ml-0">
                 <div v-if="showForm">
                     <form @submit.prevent="onSubmit" class="space-y-4" enctype="multipart/form-data">
                         <FormInput v-model="contactForm.name" label="Name" placeholder="Name eingeben"
@@ -115,13 +125,25 @@ async function onSubmit() {
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Datei anhängen
                                 (optional)</label>
-                            <input type="file" @change="onFileSelected"
-                                class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" />
+                            <input
+                                type="file"
+                                @change="onFileSelected"
+                                ref="fileInputRef"
+                                class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+                            />
+                            <button
+                                v-if="contactForm.file"
+                                type="button"
+                                @click="removeFile"
+                                class="mt-2 px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition-colors duration-200"
+                            >
+                                Datei entfernen
+                            </button>
                         </div>
 
                         <div>
                             <button type="submit"
-                                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors duration-200"
+                                class="w-full bg-blue-800 text-white py-2 rounded-md hover:bg-blue-900 transition-colors duration-200"
                                 :disabled="!isFormValid">Absenden</button>
                         </div>
                     </form>

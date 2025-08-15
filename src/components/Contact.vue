@@ -86,6 +86,9 @@ import ContactForm from '@/components/ContactForm.vue';
             </div>
         </div>
     </div>
+    <div class="container mx-auto xl:p-5 p-0 pt-24">
+        <h1 class="md:text-6xl text-4xl text-center font-bold xl:mt-10 mt-0 text-blue-950">Oder schreib uns einfach direkt</h1>
+    </div>
     <div>
         <ContactForm />
     </div>

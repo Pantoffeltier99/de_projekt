@@ -170,7 +170,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="container mx-auto p-5">
         <a
           href="https://fahrtenbedarf.de/"
           target="_blank"
@@ -178,8 +178,11 @@
             <div class="bg-white shadow-md p-5 rounded-2xl container mx-auto md:w-200 w-100">
               <img src="https://www.fahrtenbedarf.de/media/fb/48/d9/1712389706/fahrtenbedarflogo.png" alt="Bundeslager 2022" class="w-full h-full object-cover rounded-lg">
               <h5 class="text-3xl font-bold mt-2 mb-4"></h5>
-              <p class="text-center mt-2 mb-4">
-                  Unser Sponsor Fahrtenbedarf bietet eine große Auswahl an Pfadfinderbedarf und Outdoor-Ausrüstung.
+              <p class="text-center mt-2 font-semibold mb-4 bg-gradient-to-r from-red-800 to-blue-900 bg-clip-text text-transparent">
+                Freizeit&Fahrtenbedarf bietet eine große Auswahl an Pfadfinderbedarf und Outdoor-Ausrüstung.
+              </p>
+              <p class="text-center text-xl mt-4 font-bold mb-4">
+                  Als VCP-Mitglied erhälst du <span class="bg-gradient-to-l from-red-600 to-blue-700 bg-clip-text text-transparent font-bold">5% Rabatt</span> auf jeden Artikel.
               </p>
             </div>
         </a>
