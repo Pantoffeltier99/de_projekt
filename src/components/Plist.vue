@@ -168,6 +168,8 @@ export default {
   },
   methods: {
     saveToCookie() {
+      // Ensure reactivity for checkedItems before saving
+      this.checkedItems = Object.assign({}, this.checkedItems)
       // Speichere alle checkedItems als JSON-String im Cookie, z.B. 30 Tage lang
       Cookies.set('packlisteChecked', JSON.stringify(this.checkedItems), { expires: 30 })
     },
@@ -196,7 +198,7 @@ export default {
       // Setzt alle Items auf false (nicht angehakt)
       const allItems = [...this.mussItems, ...this.kannItems, ...this.darfNichtItems]
       allItems.forEach(item => {
-        this.checkedItems[item.id] = false
+        this.$set(this.checkedItems, item.id, false)
       })
     },
     clearAll() {
