@@ -1,5 +1,7 @@
 <!-- Kontaktseite -->
-
+<script setup>
+import ContactForm from '@/components/ContactForm.vue';
+</script>
 <template>
   <div class="bg-blue-50">
     <div class="container mx-auto p-5">
@@ -84,8 +86,10 @@
             </div>
         </div>
     </div>
+    <div>
+        <ContactForm />
+    </div>
   </div>
 </template>
 
-<sript setup>
-</sript>
+

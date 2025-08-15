@@ -22,7 +22,7 @@
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
-          class="hover:text-white transition-colors duration-200"
+          class="hover:text-white transition-colors duration-200 mr-2"
         >
           <img class="w-8 h-8 hover:bg-blue-900 rounded" src="@/assets/instagram-new.png" alt="Insta">
         </a>
@@ -32,7 +32,7 @@
           target="_blank"
           rel="noopener noreferrer"
           aria-label="E-Mail"
-          class="hover:text-white transition-colors duration-200"
+          class="hover:text-white transition-colors duration-200 mr-8"
         >
           <img class="w-7 h-7 hover:bg-blue-900 rounded" src="@/assets/mail.png" alt="Mail">
         </a>
