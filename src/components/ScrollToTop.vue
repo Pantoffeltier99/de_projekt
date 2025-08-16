@@ -1,11 +1,19 @@
 <template>
     <a href="#" @click.prevent="scrollToTop">
-        <img
-            v-if="isVisible"
-            src="@/assets/Scrolltop.png"
-            alt="Scroll to top"
-            class="fixed bottom-4 right-4 w-12 h-12 rounded-full shadow-lg cursor-pointer hover:bg-gray-200 transition-colors duration-300"
-        />
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 h-10 text-black transition-transform duration-200 ease-out scale-175 hover:scale-200 cursor-pointer z-50 fixed bottom-6 right-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            role="img"
+            aria-label="Pfeil nach oben"
+            v-show="isVisible"
+        >
+            <path d="M6 14 L12 8 L18 14" />
+        </svg>
     </a>
 </template>
 
