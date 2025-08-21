@@ -2,7 +2,7 @@
     <div>
         <div class="bg-blue-50 container mx-auto p-5 pt-24">
 
-            <h2 class="md:text-7xl text-5xl font-bold text-blue-950 text-center mb-8">UNSERE GRUPPEN</h2>
+            <h2 class="md:text-7xl text-5xl font-bold bg-gradient-to-r from-blue-700 via-blue-900 to-blue-500 bg-clip-text text-transparent text-center mb-8">UNSERE GRUPPEN</h2>
 
             <!-- Alle Gruppen -->
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">

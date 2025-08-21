@@ -38,7 +38,7 @@
             </div>
 
             <div class="mb-8 mt-0 md:mt-10 md:mb-10">
-                <h4 class="md:text-7xl text-5xl font-bold mt-10 text-blue-950 text-center">Komm einfach vorbei!</h4>
+                <h4 class="md:text-7xl text-5xl font-bold mt-10 bg-gradient-to-r from-blue-700 via-blue-900 to-blue-500 bg-clip-text text-transparent text-center">Komm einfach vorbei!</h4>
             </div>
 
             <div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6 xl-gap-8">

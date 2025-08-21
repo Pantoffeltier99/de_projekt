@@ -2,7 +2,7 @@
   <div class="bg-blue-50">
     <div class="container mx-auto p-5 pt-24">
       <div>
-        <h2 class="md:text-7xl text-5xl font-bold text-blue-950 text-center mb-8">PACKLISTE</h2>
+        <h2 class="md:text-7xl text-5xl font-bold bg-gradient-to-r from-blue-700 via-blue-900 to-blue-500 bg-clip-text text-transparent text-center mb-8">PACKLISTE</h2>
       </div>
 
       <div class="min-h-screen flex flex-col md:flex-row items-start justify-center">
@@ -22,7 +22,6 @@
                 :id="'muss-checkbox-' + index"
                 class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 focus:ring-2"
                 v-model="checkedItems[item.id]"
-                @change="saveToCookie"
               />
               <label
                 :for="'muss-checkbox-' + index"
@@ -48,13 +47,11 @@
                 :id="'kann-checkbox-' + index"
                 class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 focus:ring-2"
                 v-model="checkedItems[item.id]"
-                @change="saveToCookie"
               />
               <label
                 :for="'kann-checkbox-' + index"
                 class="w-full py-3 ms-2 text-base font-medium text-gray-900"
-                >{{ item.label }}</label
-              >
+              >{{ item.label }}</label>
             </div>
           </li>
 
@@ -72,13 +69,11 @@
                 :id="'darf-checkbox-' + index"
                 class="w-5 h-5 accent-red-600 text-red-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-red-500 focus:ring-2"
                 v-model="checkedItems[item.id]"
-                @change="saveToCookie"
               />
               <label
                 :for="'darf-checkbox-' + index"
                 class="w-full py-3 ms-2 text-base font-medium text-gray-900"
-                >{{ item.label }}</label
-              >
+              >{{ item.label }}</label>
             </div>
           </li>
 
@@ -116,11 +111,11 @@
 
 <script>
 import Cookies from 'js-cookie'
+
 export default {
   name: "Packliste",
   data() {
     return {
-      // Alle Items mit eindeutiger ID
       mussItems: [
         { id: "schlafsack", label: "Schlafsack" },
         { id: "isomatte", label: "Isomatte" },
@@ -166,19 +161,20 @@ export default {
     this.initCheckedItems()
     this.loadFromCookie()
   },
+  watch: {
+    checkedItems: {
+      handler(newVal) {
+        Cookies.set('packlisteChecked', JSON.stringify(newVal), { expires: 30 })
+      },
+      deep: true
+    }
+  },
   methods: {
-    saveToCookie() {
-      // Ensure reactivity for checkedItems before saving
-      this.checkedItems = Object.assign({}, this.checkedItems)
-      // Speichere alle checkedItems als JSON-String im Cookie, z.B. 30 Tage lang
-      Cookies.set('packlisteChecked', JSON.stringify(this.checkedItems), { expires: 30 })
-    },
     loadFromCookie() {
       const saved = Cookies.get('packlisteChecked')
       if (saved) {
         try {
           const parsed = JSON.parse(saved)
-          // Ensure all keys exist
           this.initCheckedItems()
           Object.keys(parsed).forEach(key => {
             if (key in this.checkedItems) {
@@ -186,25 +182,18 @@ export default {
             }
           })
         } catch (e) {
-          // Fehler ignorieren und neuen State nehmen
           this.initCheckedItems()
         }
       } else {
-        // Init alle keys als false
         this.initCheckedItems()
       }
     },
     initCheckedItems() {
-      // Setzt alle Items auf false (nicht angehakt)
       const allItems = [...this.mussItems, ...this.kannItems, ...this.darfNichtItems]
-      allItems.forEach(item => {
-        this.$set(this.checkedItems, item.id, false)
-      })
+      this.checkedItems = Object.fromEntries(allItems.map(item => [item.id, false]))
     },
     clearAll() {
-      // Alles zurücksetzen und speichern
       this.initCheckedItems()
-      this.saveToCookie()
     }
   }
 }

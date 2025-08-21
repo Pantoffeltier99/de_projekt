@@ -11,7 +11,7 @@
 
     <div>
       <div class="container mx-auto xl:p-5 p-0 pt-24">
-        <h1 class="md:text-8xl text-4xl text-center font-bold xl:mt-10 mt-0 text-blue-950">Raus aus dem Alltag, rein ins Abenteuer!</h1>
+        <h1 class="md:text-8xl text-4xl text-center font-bold xl:mt-10 mt-0 bg-gradient-to-r from-blue-700 via-blue-900 to-blue-500 bg-clip-text text-transparent">Raus aus dem Alltag, rein ins Abenteuer!</h1>
       </div>
 
       <div class="container mx-auto p-5 pt-24 xl:mt-8 md:mt-5 mt-0 xl:mb-8 md:mb-5 mb-0"> 

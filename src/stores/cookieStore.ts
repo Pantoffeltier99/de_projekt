@@ -21,6 +21,9 @@ export const useCookieStore = defineStore('cookie', () => {
     else cookiesAccepted.value = null
   }
 
+  // Direkt beim Laden ausführen:
+  loadFromStorage()
+
   return {
     cookiesAccepted,
     acceptCookies,

@@ -3,7 +3,7 @@
         <div class="container mx-auto p-5 pt-24">
 
             <div class="mb-8">
-                <h4 class="md:text-7xl text-5xl font-bold text-blue-950 text-center">NÄCHSTE TERMINE</h4>
+                <h4 class="md:text-7xl text-5xl font-bold bg-gradient-to-l from-blue-600 via-blue-900 to-blue-500 bg-clip-text text-transparent text-center">NÄCHSTE TERMINE</h4>
             </div>
 
             <div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6 xl-gap-8">
