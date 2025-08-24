@@ -11,7 +11,7 @@
                         </svg>
                     </span>
                 </router-link>
-                <h4 class="md:text-7xl text-5xl font-bold text-blue-950 text-center">VERGANGENE TERMINE</h4>
+                <h4 class="md:text-7xl text-5xl font-bold bg-gradient-to-l from-blue-600 via-blue-900 to-blue-500 bg-clip-text text-transparent text-center">VERGANGENE TERMINE</h4>
             </div>
 
             <div class="container mx-auto md:p-20 p-5 md:pt-24">
