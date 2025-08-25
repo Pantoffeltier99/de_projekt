@@ -4,9 +4,9 @@
   <div class="bg-blue-50">
     <div class="relative w-full">
       <img src="@\assets\NIMROD3.jpg" class="w-full h-full object-cover" alt="Nimrod" />
-      <h1 class="absolute top-5/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 text-5xl md:text-7xl xl:text-9xl font-bold text-center">
-        PFADFINDEN MIT ALLEN
-      </h1>
+        <h1 class="reveal-on-load scale-75 transition-all duration-700 ease-out delay-200 absolute top-5/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 text-5xl md:text-7xl xl:text-9xl font-bold text-center">
+          PFADFINDEN MIT ALLEN
+        </h1>
     </div>
 
     <div>
@@ -22,7 +22,8 @@
               <div class="mt-0 mb-0 rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Nächstes Lager</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
-                  <div class="bg-white shadow-md p-5 rounded-2xl">
+                  <div class="bg-white shadow-md p-5 rounded-2xl reveal-on-scroll opacity-0 scale-75
+                     transition-all duration-700 ease-out delay-400">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
                     <p class="text-jusify mt-2 mb-4">
@@ -41,7 +42,8 @@
               <div class="rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Kürzlich</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
-                  <div class="bg-white shadow-md p-5 rounded-2xl">
+                  <div class="bg-white shadow-md p-5 rounded-2xl reveal-on-scroll opacity-0 scale-75
+                     transition-all duration-700 ease-out delay-600">
                     <img src="https://vcp.sh/images/Pfila2023_2.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Pfingstlager 2025</h5>
                     <p class="text-jusify mt-2 mb-4">
@@ -60,7 +62,8 @@
               <div class="mt-0 mb-0 rounded-2xl">
                   <h1 class="text-3xl font-bold text-center">Wichtig</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
-                  <div class="bg-white shadow-md p-5 rounded-2xl">
+                  <div class="bg-white shadow-md p-5 rounded-2xl reveal-on-scroll opacity-0 scale-75
+                              transition-all duration-700 ease-out delay-800">
                     <img src="https://as2.ftcdn.net/v2/jpg/01/62/17/79/1000_F_162177937_uTe0UImsLygFsJMkMooYagoBP55rK3B5.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Ferien</h5>
                     <p class="text-jusify mt-2 mb-4">
@@ -95,19 +98,23 @@
         <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
         <div class="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 xl-gap-8">
 
-          <div class="relative rounded-lg shadow-md overflow-hidden">
+          <div class="relative rounded-lg shadow-md overflow-hidden
+         reveal-on-scroll opacity-0 scale-75
+         transition-all duration-700 ease-out delay-0">
             <!-- Das Bild -->
-            <img src="@\assets\Wölflinge.png" class="w-full h-40 object-cover rounded-lg">
+            <img src="@/assets/Wölflinge.png" class="w-full h-40 object-cover rounded-lg">
 
-            <!-- Wölflinge -->
+            <!-- Overlay -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
-                <h3 class="text-3xl font-semibold text-center mb-2">Wölflinge</h3>
-                <p class="text-center font-semibold p-1">6 bis 10 Jahre</p>
-                <p class="text-center font-semibold p-1">16:45 bis 18:15, Donnerstags</p>
+              <h3 class="text-3xl font-semibold text-center mb-2">Wölflinge</h3>
+              <p class="text-center font-semibold p-1">6 bis 10 Jahre</p>
+              <p class="text-center font-semibold p-1">16:45 bis 18:15, Donnerstags</p>
             </div>
           </div>
 
-          <div class="relative rounded-lg shadow-md overflow-hidden">
+          <div class="relative rounded-lg shadow-md overflow-hidden
+         reveal-on-scroll opacity-0 scale-75
+         transition-all duration-700 ease-out delay-200">
             <!-- Das Bild -->
             <img src="@\assets\Jupfi.png" class="w-full h-40 object-cover rounded-lg">
 
@@ -119,15 +126,17 @@
             </div>
           </div>
 
-          <div class="relative rounded-lg shadow-md overflow-hidden">
+          <div class="relative rounded-lg shadow-md overflow-hidden
+         reveal-on-scroll opacity-0 scale-75
+         transition-all duration-700 ease-out delay-400">
             <!-- Das Bild -->
-            <img src="@\assets\PfadiRR.png" class="w-full h-40 object-cover rounded-lg">
+            <img src="@/assets/PfadiRR.png" class="w-full h-40 object-cover rounded-lg">
 
-            <!-- Pfad RR -->
+            <!-- Overlay -->
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
-                <h3 class="text-3xl font-semibold text-center mb-2">Pfadfinder & Ranger*Rover</h3>
-                <p class="text-center font-semibold p-1">ab 14 Jahren</p>
-                <p class="text-center font-semibold p-1">18:15 bis 19:45, Donnerstags</p>
+              <h3 class="text-3xl font-semibold text-center mb-2">Pfadfinder & Ranger*Rover</h3>
+              <p class="text-center font-semibold p-1">ab 14 Jahren</p>
+              <p class="text-center font-semibold p-1">18:15 bis 19:45, Donnerstags</p>
             </div>
           </div>
 
@@ -192,5 +201,31 @@
   </div>
 </template>
 
+
 <script setup>
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "scale-75");
+          entry.target.classList.add("opacity-100", "scale-100");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2
+     }
+    
+  );
+
+  document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+    observer.observe(el);
+  });
+});
 </script>
+
+
