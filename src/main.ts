@@ -2,7 +2,7 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import reveal from './directives/reveal.js'
+import reveal from './directives/reveal'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 

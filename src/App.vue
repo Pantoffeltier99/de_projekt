@@ -8,6 +8,7 @@ import { useMonitorSize } from './composables/useMonitorsize.ts';
 import Cookies from '@/components/Cookies.vue'
 import { useCookieStore } from '@/stores/cookieStore'
 import ScrollToTop from '@/components/ScrollToTop.vue';
+import Reveal from '@/directives/reveal';
 
 const cookieStore = useCookieStore()
 cookieStore.loadFromStorage()

@@ -4,7 +4,7 @@
   <div class="bg-blue-50">
     <div class="relative w-full">
       <img src="@\assets\NIMROD3.jpg" class="w-full h-full object-cover" alt="Nimrod" />
-        <h1 v-reveal class="reveal-on-load scale-75 transition-all duration-700 ease-out delay-0 absolute top-5/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 text-5xl md:text-7xl xl:text-9xl font-bold text-center">
+        <h1 class="reveal-on-load scale-75 transition-all duration-700 ease-out delay-0 absolute top-5/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 text-5xl md:text-7xl xl:text-9xl font-bold text-center">
           PFADFINDEN MIT ALLEN
         </h1>
     </div>
