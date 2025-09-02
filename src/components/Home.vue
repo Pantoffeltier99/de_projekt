@@ -4,7 +4,7 @@
   <div class="bg-blue-50">
     <div class="relative w-full">
       <img src="@\assets\NIMROD3.jpg" class="w-full h-full object-cover" alt="Nimrod" />
-        <h1 class="reveal-on-load scale-75 transition-all duration-700 ease-out delay-200 absolute top-5/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 text-5xl md:text-7xl xl:text-9xl font-bold text-center">
+        <h1 class="reveal-on-load scale-75 transition-all duration-700 ease-out delay-0 absolute top-5/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 text-5xl md:text-7xl xl:text-9xl font-bold text-center">
           PFADFINDEN MIT ALLEN
         </h1>
     </div>
@@ -184,7 +184,8 @@
           href="https://fahrtenbedarf.de/"
           target="_blank"
           rel="noopener noreferrer">
-            <div class="bg-white shadow-md p-5 rounded-2xl container mx-auto md:w-200 w-100">
+            <div class="bg-white shadow-md p-5 rounded-2xl container mx-auto md:w-200 w-100 relative overflow-hidden
+              reveal-on-scroll opacity-0 scale-75 transition-all duration-700 ease-out">
               <img src="https://www.fahrtenbedarf.de/media/fb/48/d9/1712389706/fahrtenbedarflogo.png" alt="Bundeslager 2022" class="w-full h-full object-cover rounded-lg">
               <h5 class="text-3xl font-bold mt-2 mb-4"></h5>
               <p class="text-center mt-2 font-semibold mb-4">
@@ -224,6 +225,13 @@ onMounted(() => {
 
   document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
     observer.observe(el);
+  });
+
+  document.querySelectorAll(".reveal-on-load").forEach((el, i) => {
+    setTimeout(() => {
+      el.classList.remove("opacity-0", "scale-75");
+      el.classList.add("opacity-100", "scale-100");
+    }, i * 200); // kleine Verzögerung pro Element, damit sie nacheinander ploppen
   });
 });
 </script>

@@ -4,6 +4,7 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import reveal from './composables/reveal.js'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -52,3 +53,4 @@ const pinia = createPinia()
 app.use(pinia)
 
 createApp(App).use(router).mount('#app')
+app.directive('reveal', reveal)

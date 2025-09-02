@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="bg-blue-50 container mx-auto p-5 pt-24">
+    <div class="bg-blue-50">
+        <div class=" container mx-auto p-5 pt-24">
 
             <h2 class="md:text-7xl text-5xl font-bold bg-gradient-to-r from-blue-700 via-blue-900 to-blue-500 bg-clip-text text-transparent text-center mb-8">UNSERE GRUPPEN</h2>
 
@@ -8,7 +8,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
                 <!-- Wölflinge -->
-                <div class="rounded-xl p-5 bg-white shadow-md">
+                <div class="opacity-0 scale-75 transition-all duration-700 ease-out transform reveal-on-load bg-white p-5 rounded-lg shadow-md">
                     <div class="relative rounded-lg shadow-md overflow-hidden">
                         <!-- Das Bild -->
                         <img src="@\assets\Wölflinge.png" class="w-full h-20 object-cover rounded-lg">
@@ -37,7 +37,7 @@
                 </div>
 
                 <!-- Jupfis -->
-                <div class="bg-white shadow-md rounded-xl p-5">
+                <div class="opacity-0 scale-75 transition-all duration-700 ease-out transform reveal-on-load bg-white p-5 rounded-lg shadow-md">
                     <div class="relative rounded-lg shadow-md overflow-hidden">
                         <!-- Das Bild -->
                         <img src="@\assets\Jupfi.png" class="w-full h-20 object-cover rounded-lg">
@@ -64,7 +64,7 @@
                 </div>
 
                 <!-- Pfadis & R*Rs -->
-                <div class="bg-white shadow-md rounded-xl p-5">
+                <div class="opacity-0 scale-75 transition-all duration-700 ease-out transform reveal-on-load bg-white p-5 rounded-lg shadow-md">
                     <div class="relative rounded-lg shadow-md overflow-hidden">
                         <!-- Das Bild -->
                         <img src="@\assets\PfadiRR.png" class="w-full h-20 object-cover rounded-lg">
@@ -94,3 +94,36 @@
         </div>
     </div>
 </template>
+
+<script setup>
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "scale-75");
+          entry.target.classList.add("opacity-100", "scale-100");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2
+     }
+    
+  );
+
+  document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+    observer.observe(el);
+  });
+
+  document.querySelectorAll(".reveal-on-load").forEach((el, i) => {
+    setTimeout(() => {
+      el.classList.remove("opacity-0", "scale-75");
+      el.classList.add("opacity-100", "scale-100");
+    }, i * 200); // kleine Verzögerung pro Element, damit sie nacheinander ploppen
+  });
+});
+</script>
