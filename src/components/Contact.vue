@@ -8,7 +8,7 @@ import ContactForm from '@/components/ContactForm.vue';
         <div class="flex flex-col md:flex-row justify-center gap-4 p-5 pt-24">
 
             <!-- Karte -->
-            <div class="bg-white shadow-md p-5 rounded-xl h-[400px] md:w-[700px] w-full">
+            <div v-reveal class="bg-white shadow-md p-5 rounded-xl h-[400px] md:w-[700px] w-full transition-all duration-700 reveal-on-load opacity-0 scale-75 delay-0">
                 <iframe
                 class="w-full h-full rounded-xl"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.975994664491!2d9.600819912621537!3d54.69245007304597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b36b38210982d3%3A0xe8c9f94c71c69740!2sFlensburger%20Str.%201%2C%2024986%20Mittelangeln!5e0!3m2!1sde!2sde!4v1753565992020!5m2!1sde!2sde"
@@ -18,7 +18,7 @@ import ContactForm from '@/components/ContactForm.vue';
             </div>
 
             <!-- Kontaktinformationen -->
-            <div class="bg-white shadow-md p-5 rounded-xl h-[400px] md:w-[300px] w-full">
+            <div v-reveal class="bg-white shadow-md p-5 rounded-xl h-[400px] md:w-[300px] w-full transition-all duration-700 reveal-on-load opacity-0 scale-75 delay-100">
                 <div>
                     <div>
                         <h4 class="text-2xl font-bold">Kontakt</h4>

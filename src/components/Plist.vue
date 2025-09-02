@@ -6,7 +6,7 @@
       </div>
 
       <div class="min-h-screen flex flex-col md:flex-row items-start justify-center">
-        <ul class="text-base font-medium text-gray-900 bg-white rounded-lg shadow-md p-4 max-w-md">
+        <ul v-reveal class="text-base font-medium text-gray-900 bg-white rounded-lg shadow-md p-4 max-w-md  reveal-on-load transition-all duration-500 scale-75 opacity-0">
           
           <!-- MUSS -->
           <li class="w-full border-b border-gray-200">
@@ -88,7 +88,7 @@
           </li>
         </ul>
 
-        <div class="md:w-1/2 xl:w-1/2 p-5 bg-white shadow-md rounded-lg mt-6 md:mt-0 md:ml-6 max-w-lg">
+        <div v-reveal class="md:w-1/2 xl:w-1/2 p-5 bg-white shadow-md rounded-lg mt-6 md:mt-0 md:ml-6 max-w-lg delay-100 reveal-on-load transition-all duration-500 scale-75 opacity-0">
           <img
             src="https://static.bergzeit.com/bz_mag_double-tile-teaser_portrait_desktop/grafik-rucksack-packen-horizontales-gehen-bergzeit-hoch-1708427783.jpg"
             alt="Packliste"

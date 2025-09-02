@@ -15,7 +15,7 @@
                     </div>
                     
                     <!-- v Rieneck 25 v -->
-                    <div class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md">
+                    <div v-reveal class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md  reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-0">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                         <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
                         <p class="text-jusify mt-2 mb-4">
@@ -31,7 +31,7 @@
                     <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
 
                     <!-- v Bula 26 v -->
-                    <div class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md">
+                    <div v-reveal class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-150">
                         <img src="https://bundeslager.vcp.de/wp-content/uploads/2025/03/20220806-142752_VCP-Bahl-1-scaled.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                         <h5 class="text-3xl font-bold mt-2 mb-4">Bundeslager 2026</h5>
                         <p class="text-jusify mt-2 mb-4">
@@ -54,7 +54,7 @@
                     </div>
 
                     <!-- v Pfila 25 v -->
-                    <div class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md">
+                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md  reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-0">
                         <img src="https://www.nordkirche.de/fileadmin/_processed_/c/e/csm_pfingstlager_vcp2018-1_0027759e3c.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
                         <div>
                             <h5 class="text-2xl font-bold">Pfingstlager 2025</h5>
@@ -69,7 +69,7 @@
                     </div>
 
                     <!-- v Nola 25 v -->
-                    <div class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md">
+                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-100">
                         <img src="https://vcp.sh/images/thumbnails/images/Nola2024_2_Tim_Sekulic_k-fill-450x290.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
                         <div>
                             <h5 class="text-2xl font-bold">Nordlager 2024</h5>
@@ -84,7 +84,7 @@
                     </div>
                     
                     <!-- v Bula 22 v -->
-                    <div class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md">
+                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-200">
                         <img src="https://vcp.de/pfadfinden/wp-content/uploads/2020/12/Luftbild_VCP-Fabian-Wisner-Beitragsbild-scaled.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
                         <div>
                             <h5 class="text-2xl font-bold">Bundeslager 2022</h5>

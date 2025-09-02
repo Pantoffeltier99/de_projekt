@@ -23,7 +23,7 @@ onUnmounted(() => {
         <div class="container mx-auto p-2 flex items-center justify-between">
 
             <!-- Links: Logo und Titel -->
-            <div class="flex items-center space-x-3">
+            <div v-reveal class="flex items-center space-x-3 reveal-on-load transition-all duration-400 scale-75 opacity-0">
                 <img 
                     src="@/assets/Stammeslogo.png" 
                     alt="Logo" 
@@ -36,13 +36,14 @@ onUnmounted(() => {
 
             <!-- Rechts: Navigation, Icons -->
             <div class="flex items-center space-x-4">
-                <nav class="flex space-x-4 items-center">
+                <nav v-reveal class="flex space-x-4 items-center delay-50 reveal-on-load transition-all duration-400 scale-75 opacity-0">
 
                     <!-- Hauptlinks, nur auf lg und größer sichtbar -->
                     <router-link
                         to="/home"
                         class="font-bold text-white px-3 py-2 rounded transition-all duration-300 hidden md:flex flex-col items-center group"
                         active-class="active-link"
+                        
                     >
                         START
                         <span
