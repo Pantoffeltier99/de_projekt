@@ -4,7 +4,7 @@
   <div class="bg-blue-50">
     <div class="relative w-full">
       <img src="@\assets\NIMROD3.jpg" class="w-full h-full object-cover" alt="Nimrod" />
-        <h1 class="reveal-on-load scale-75 transition-all duration-700 ease-out delay-0 absolute top-5/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 text-5xl md:text-7xl xl:text-9xl font-bold text-center">
+        <h1 v-reveal class="reveal-on-load scale-75 transition-all duration-700 ease-out delay-0 absolute top-5/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-yellow-200 text-5xl md:text-7xl xl:text-9xl font-bold text-center">
           PFADFINDEN MIT ALLEN
         </h1>
     </div>
@@ -201,39 +201,5 @@
     </div>
   </div>
 </template>
-
-
-<script setup>
-import { onMounted } from "vue";
-
-onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove("opacity-0", "scale-75");
-          entry.target.classList.add("opacity-100", "scale-100");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.2
-     }
-    
-  );
-
-  document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
-    observer.observe(el);
-  });
-
-  document.querySelectorAll(".reveal-on-load").forEach((el, i) => {
-    setTimeout(() => {
-      el.classList.remove("opacity-0", "scale-75");
-      el.classList.add("opacity-100", "scale-100");
-    }, i * 200); // kleine Verzögerung pro Element, damit sie nacheinander ploppen
-  });
-});
-</script>
 
 

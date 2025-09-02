@@ -2,9 +2,10 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import reveal from './directives/reveal.js'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import reveal from './composables/reveal.js'
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -51,6 +52,6 @@ const router = createRouter({
 const app = createApp(App)
 const pinia = createPinia()
 app.use(pinia)
-
-createApp(App).use(router).mount('#app')
+app.use(router)
 app.directive('reveal', reveal)
+app.mount('#app')
