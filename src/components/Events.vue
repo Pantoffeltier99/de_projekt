@@ -14,17 +14,17 @@
                         <hr class="w-23 h-1 mx-auto rounded-sm md:my-1 dark:bg-blue-800 md:mr-0">  
                     </div>
                     
-                    <!-- v Rieneck 25 v -->
+                    <!-- v Pfila 26 v -->
                     <div v-reveal class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md  reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-0">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
-                        <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
+                        <img src="https://www.vcp-niedersachsen.de/wp-content/uploads/2014/06/PfilaS%C3%BCntel.jpg" alt="Pfila" class="w-full h-64 object-cover rounded-lg">
+                        <h5 class="text-3xl font-bold mt-2 mb-4">Pfingstlager 2026</h5>
                         <p class="text-jusify mt-2 mb-4">
-                            Dieses Jahr in den Sommerferien fahren wir zusammen mit dem Stamm Heide zehn Tage auf die Burg Rieneck.
+                            Nächstes Jahr über Pfingsten fahren wir wie jedes Jahr zum Landespfingstlager des VCP SH nach Tydal. Das Motto wird noch bekannt gegeben.
                         </p>
 
                         <div class="mt-4 flex items-center justify-between">
-                            <p class="text-sm text-gray-500 italic">Datum: 23.08.25 - 01.09.24</p>
-                            <p class="text-sm text-gray-500 italic">Rieneck</p>
+                            <p class="text-sm text-gray-500 italic">Datum: 22.05.26 - 25.05.26</p>
+                            <p class="text-sm text-gray-500 italic">Tydal</p>
                         </div>
                     </div>
 
@@ -53,8 +53,23 @@
                         <hr class="w-32 h-1 mx-auto rounded-sm my-1 dark:bg-blue-800 md:mr-0">
                     </div>
 
+                    <!-- v Rieneck 25v -->
+                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-0">
+                        <img src="@/assets/Rieneck25.jpg" alt="Rieneck 2025" class="w-36 h-36 object-cover rounded-xl">
+                        <div>
+                            <h5 class="text-2xl font-bold">Rieneck 2025</h5>
+                            <p class="text-jusify mt-2 mb-4">
+                                Zusammen mit dem VCP Heide waren wir für 10 Tage auf dem Zeltplatz der Burg Rieneck.
+                            </p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <p class="text-sm text-gray-500 italic">Datum: 23.08.2025 - 01.09.2025</p>
+                                <p class="text-sm text-gray-500 italic">Rieneck</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- v Pfila 25 v -->
-                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md  reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-0">
+                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md  reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-100">
                         <img src="https://www.nordkirche.de/fileadmin/_processed_/c/e/csm_pfingstlager_vcp2018-1_0027759e3c.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
                         <div>
                             <h5 class="text-2xl font-bold">Pfingstlager 2025</h5>
@@ -69,7 +84,7 @@
                     </div>
 
                     <!-- v Nola 25 v -->
-                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-100">
+                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-200">
                         <img src="https://vcp.sh/images/thumbnails/images/Nola2024_2_Tim_Sekulic_k-fill-450x290.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
                         <div>
                             <h5 class="text-2xl font-bold">Nordlager 2024</h5>
@@ -82,21 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- v Bula 22 v -->
-                    <div v-reveal class="flex items-center gap-4 p-3 rounded-2xl bg-white shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-200">
-                        <img src="https://vcp.de/pfadfinden/wp-content/uploads/2020/12/Luftbild_VCP-Fabian-Wisner-Beitragsbild-scaled.jpg" alt="Bundeslager 2022" class="w-36 h-36 object-cover rounded-xl">
-                        <div>
-                            <h5 class="text-2xl font-bold">Bundeslager 2022</h5>
-                            <p class="text-jusify mt-2 mb-4">
-                                Das Bundeslager 2022 fand in Großzerlang unter dem Thema "Neustadt" statt und war ein unvergessliches Erlebnis für alle Teilnehmer.
-                            </p>
-                            <div class="mt-4 flex items-center justify-between">
-                                <p class="text-sm text-gray-500 italic">Datum: 30.08.2022 - 08.09.2022</p>
-                                <p class="text-sm text-gray-500 italic">Großzerlang</p>
-                            </div>
-                        </div>
-                    </div>
+                
 
                     <button class="mt-4 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
                         <router-link

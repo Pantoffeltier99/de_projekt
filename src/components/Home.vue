@@ -17,16 +17,16 @@
       <div class="container mx-auto p-5 pt-24 xl:mt-8 md:mt-5 mt-0 xl:mb-8 md:mb-5 mb-0"> 
         <div class="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-4 md:gap-6 xl-gap-8">
 
-          <!-- Nächstes Lager -->
+          <!-- Kürzlich -->
           <div>
               <div class="mt-0 mb-0 rounded-2xl">
-                  <h1 class="text-3xl font-bold text-center">Nächstes Lager</h1>
+                  <h1 class="text-3xl font-bold text-center">Kürzlich</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
                   <div v-reveal class="bg-white shadow-md p-5 rounded-2xl transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-0">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
                     <p class="text-jusify mt-2 mb-4">
-                        Dieses Jahr in den Sommerferien fahren wir zusammen mit dem Stamm Heide zehn Tage auf die Burg Rieneck.
+                        Dieses Jahr in den Sommerferien waren wir zusammen mit dem Stamm Heide zehn Tage auf der Burg Rieneck.
                     </p>
                     <div class="mt-4 flex items-center justify-between">
                         <p class="text-sm text-gray-500 italic">Datum: 23.08.25 - 01.09.24</p>
@@ -39,16 +39,16 @@
           <!-- Kürzlich -->
           <div>       
               <div class="rounded-2xl">
-                  <h1 class="text-3xl font-bold text-center">Kürzlich</h1>
+                  <h1 class="text-3xl font-bold text-center">Nächstes Lager</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
                   <div v-reveal class="bg-white shadow-md p-5 rounded-2xl transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-150">
                     <img src="https://vcp.sh/images/Pfila2023_2.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
-                    <h5 class="text-3xl font-bold mt-2 mb-4">Pfingstlager 2025</h5>
+                    <h5 class="text-3xl font-bold mt-2 mb-4">Pfingstlager 2026</h5>
                     <p class="text-jusify mt-2 mb-4">
-                        Dieses Jahr fand das Pfingstlager 2025 wieder in Tydal statt und hatte das Motto "Streng geheim".
+                        Nächstes Jahr über Pfingsten fahren wir wie jedes Jahr zum Landespfingstlager des VCP SH nach Tydal. Das Motto wird noch bekannt gegeben.
                     </p>
                     <div class="mt-4 flex items-center justify-between">
-                        <p class="text-sm text-gray-500 italic">Datum: 06.06.2025 - 09.06.2025</p>
+                        <p class="text-sm text-gray-500 italic">Datum: 22.05.2026 - 25.05.2026</p>
                         <p class="text-sm text-gray-500 italic">Tydal</p>
                     </div>
                   </div>

@@ -18,6 +18,23 @@
                 <!-- v Alte Termine v -->
                 <div>
 
+                    <!-- v Rieneck 25 v -->
+                    <div class="mt-2 mb-4 rounded-2xl">
+                        <img src="@/assets/Rieneck25.jpg" alt="Rieneck 2025" class="w-full h-100 object-cover rounded-lg">
+                        <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
+                        <p class="text-jusify mt-2 mb-4">
+                            Zusammen mit dem VCP Heide waren wir für 10 Tage auf dem Zeltplatz der Burg Rieneck.
+                        </p>
+                        <br>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm text-gray-500 italic">Datum: 23.08.2025 - 01.09.2025</p>
+                            <p class="text-sm text-gray-500 italic">Rieneck</p>
+                        </div>
+                    </div>
+
+                    <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
+                    <br>
+
                     <!-- v Pfila 25 v -->
                     <div class="mt-2 mb-4 rounded-2xl">
                         <img src="https://vcp.sh/images/Pfila2023_2.jpg" alt="Bundeslager 2022" class="w-full h-100 object-cover rounded-lg">
