@@ -16,11 +16,10 @@ export const useCookieStore = defineStore('cookie', () => {
 
   function loadFromStorage(): void {
     const saved = localStorage.getItem('cookiesAccepted')
-    if (saved === 'true') cookiesAccepted.value = true
-    else if (saved === 'false') cookiesAccepted.value = false
+    if (saved === 'true') cookiesAccepted.value = null
+    else if (saved === 'false') cookiesAccepted.value = null // <-- Korrigiert!
     else cookiesAccepted.value = null
   }
-
   // Direkt beim Laden ausführen:
   loadFromStorage()
 

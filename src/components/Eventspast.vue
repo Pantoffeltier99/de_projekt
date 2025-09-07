@@ -20,7 +20,7 @@
 
                     <!-- v Rieneck 25 v -->
                     <div class="mt-2 mb-4 rounded-2xl">
-                        <img src="@/assets/Rieneck25.jpg" alt="Rieneck 2025" class="w-full h-100 object-cover rounded-lg">
+                        <img src="@/assets/Rieneckküche.jpg" alt="Rieneck 2025" class="w-full h-100 object-cover rounded-lg">
                         <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
                         <p class="text-jusify mt-2 mb-4">
                             Zusammen mit dem VCP Heide waren wir für 10 Tage auf dem Zeltplatz der Burg Rieneck.

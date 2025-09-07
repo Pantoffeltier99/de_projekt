@@ -1,5 +1,5 @@
 <template>
-  <div v-if="cookieStore.cookiesAccepted === null" class="fixed inset-0 flex items-center justify-center z-50">
+  <div class="fixed inset-0 flex items-center justify-center z-50" v-if="cookieStore.cookiesAccepted === null">
     <div class="bg-white p-6 rounded-lg shadow-lg max-w-md text-center">
       <h2 class="text-xl font-bold mb-4">Cookies</h2>
       <p class="mb-6">Wir verwenden Cookies. Stimmen sie zu?</p>
@@ -10,6 +10,8 @@
     </div>
   </div>
 </template>
+
+<!--v-if="cookieStore.cookiesAccepted === null"-->
 
 <script setup lang="js">
 import { useCookieStore } from '@/stores/cookieStore'

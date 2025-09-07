@@ -6,12 +6,14 @@
         <img
           src="@/assets/Nimrod_Flagge.webp"
           alt="Nimrod Flagge"
-          class="h-64 md:h-96 w-full object-cover mb-8 rounded-lg shadow-md"
+          v-reveal
+          class="h-64 md:h-96 w-full object-cover mb-8 rounded-lg shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-0"
         />
         <img
           src="@/assets/NimrodHeidePfila.jpeg"
           alt="Nimrod Pfila"
-          class="h-64 md:h-96 w-full object-cover mb-8 rounded-lg shadow-md"
+          v-reveal
+          class="h-64 md:h-96 w-full object-cover mb-8 rounded-lg shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-100"
         />
       </div>
       <div class="mb-8 mt-0 md:mt-10 md:mb-16">
@@ -22,7 +24,7 @@
           - seit 1996 -
         </p>
       </div>
-      <div class="bg-white p-6 md:p-10 rounded-lg shadow-md">
+      <div v-reveal class="bg-white p-6 md:p-10 rounded-lg shadow-md md:reveal-on-load reveal-on-scroll transition-all duration-500 scale-75 opacity-0 delay-200">
         <p class="text-justify text-lg md:text-xl mb-6">
           Seit 1996 sind wir Teil der großen Pfadfinderbewegung und bieten Kindern und Jugendlichen die Möglichkeit, Gemeinschaft, Abenteuer und Natur hautnah zu erleben. In unseren regelmäßigen Gruppenstunden wird gespielt, gelacht, gewerkelt und gelernt – immer mit dem Ziel, die Welt ein Stück besser zu hinterlassen, als wir sie vorgefunden haben.
           <br>

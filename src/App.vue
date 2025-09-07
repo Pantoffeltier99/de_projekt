@@ -9,9 +9,8 @@ import Cookies from '@/components/Cookies.vue'
 import { useCookieStore } from '@/stores/cookieStore'
 import ScrollToTop from '@/components/ScrollToTop.vue';
 
-const cookieStore = useCookieStore()
-cookieStore.loadFromStorage()
 const sizes = useMonitorSize();
+const cookieStore = useCookieStore()
 const sidebarOpen = ref(false);
 import { useDark } from '@vueuse/core';
 const isDark = useDark({
