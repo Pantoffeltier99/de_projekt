@@ -111,6 +111,8 @@
 
 <script>
 import Cookies from 'js-cookie'
+import { useCookieStore } from '@/stores/cookieStore'
+const cookieStore = useCookieStore()
 
 export default {
   name: "Packliste",
@@ -161,10 +163,15 @@ export default {
     this.initCheckedItems()
     this.loadFromCookie()
   },
+
   watch: {
     checkedItems: {
       handler(newVal) {
-        Cookies.set('packlisteChecked', JSON.stringify(newVal), { expires: 30 })
+        if (cookieStore.cookiesAccepted) {
+          Cookies.set('packlisteChecked', JSON.stringify(newVal), { expires: 30 })
+        } else {
+          Cookies.remove('packlisteChecked')
+        }
       },
       deep: true
     }
