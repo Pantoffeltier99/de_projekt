@@ -94,6 +94,18 @@
             :class="[$route.path === '/packliste' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
           ></span>
         </router-link>
+        <router-link
+          to="/impressum"
+          class="font-bold text-black px-3 py-2 rounded transition-all duration-300 flex flex-col items-start group"
+          active-class="active-link"
+          @click="$emit('close')"
+        >
+          IMPRESSUM UND DATENSCHUTZ
+          <span
+            class="block h-1 rounded mt-1 bg-black transition-all duration-300"
+            :class="[$route.path === '/impressum' ? 'w-6 opacity-100' : 'w-0 opacity-0', 'group-hover:w-6 group-hover:opacity-100']"
+          ></span>
+        </router-link>
         <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="font-bold text-black px-3 py-2 rounded transition-all duration-300 flex flex-col items-start group">F&F FAHRTENBEDARF</a>
       </nav>
     </div>

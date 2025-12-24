@@ -15,7 +15,7 @@
                     </div>
                     
                     <!-- v Pfila 26 v -->
-                    <div v-reveal class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md  reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-0">
+                    <div v-reveal class="mt-2 mb-4 rounded-2xl p-5 bg-white shadow-md reveal-on-load transition-all duration-500 scale-75 opacity-0 delay-0">
                         <img src="https://www.vcp-niedersachsen.de/wp-content/uploads/2014/06/PfilaS%C3%BCntel.jpg" alt="Pfila" class="w-full h-64 object-cover rounded-lg">
                         <h5 class="text-3xl font-bold mt-2 mb-4">Pfingstlager 2026</h5>
                         <p class="text-jusify mt-2 mb-4">

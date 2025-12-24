@@ -44,6 +44,10 @@ const router = createRouter({
     {
       path: '/mitmachen',
       component: () => import('./components/Member.vue') // join page
+    },
+    {
+      path: '/impressum',
+      component: () => import('./components/Impressum.vue')
     }
   ]
 })

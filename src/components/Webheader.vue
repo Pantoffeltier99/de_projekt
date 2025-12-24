@@ -137,6 +137,18 @@ onUnmounted(() => {
                                 ></span>
                             </router-link>
 
+                            <router-link
+                                to="/impressum"
+                                class="flex flex-col items-start px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300 group"
+                                active-class="active-link"
+                            >
+                                Impressum und Datenschutz
+                                <span
+                                    v-if="$route.path === '/impressum'"
+                                    class="block w-6 h-1 bg-black rounded mt-1 transition-all duration-300"
+                                ></span>
+                            </router-link>
+
                             <a href="https://www.fahrtenbedarf.de/" target="_blank" rel="noopener noreferrer" class="group flex items-center px-4 py-2 text-black hover:bg-blue-100 transition-all duration-300">
                                 F&F Fahrtenbedarf
                                 <svg
