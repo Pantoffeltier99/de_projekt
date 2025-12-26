@@ -5,17 +5,14 @@ import FormInput from '@/components/FormInput.vue';
 import FormTextarea from '@/components/FormTextarea.vue';
 
 const title = 'Kontaktformular';
-const showForm = ref(true); // <-- als ref deklarieren
+const showForm = ref(true);
 const successMessage = ref('');
-const fileInputRef = ref(null);
-
 
 const initialContactForm = {
     name: '',
     email: '',
     subject: '',
-    message: '',
-    file: null
+    message: ''
 };
 
 const initialtouched = {
@@ -30,7 +27,7 @@ const touched = reactive({ ...initialtouched });
 
 function setTouched(field) {
     touched[field] = true;
-};
+}
 
 const errors = reactive({
     name: computed(() => (!contactForm.name && touched.name) ? 'Name ist erforderlich.' : ''),
@@ -56,10 +53,6 @@ const isFormValid = computed(() => {
     return allFieldsTouched && noErrors;
 });
 
-function onFileSelected(event) {
-    contactForm.file = event.target.files[0];
-}
-
 function resetForm() {
     setTimeout(() => {
         successMessage.value = '';
@@ -67,13 +60,6 @@ function resetForm() {
         Object.assign(contactForm, initialContactForm);
         Object.assign(touched, initialtouched);
     }, 2000);
-}
-
-function removeFile() {
-    contactForm.file = null;
-    if (fileInputRef.value) {
-        fileInputRef.value.value = null;
-    }
 }
 
 async function onSubmit() {
@@ -105,7 +91,7 @@ async function onSubmit() {
                 <h1 class="text-2xl font-bold">{{ title }}</h1>
                 <hr class="w-48 h-1 mx-auto rounded-sm dark:bg-blue-800 mb-4 ml-0">
                 <div v-if="showForm">
-                    <form @submit.prevent="onSubmit" class="space-y-4" enctype="multipart/form-data">
+                    <form @submit.prevent="onSubmit" class="space-y-4">
                         <FormInput v-model="contactForm.name" label="Name" placeholder="Name eingeben"
                             :error="errors.name" @input="setTouched('name')" />
                         <FormInput v-model="contactForm.subject" label="Betreff" placeholder="Betreff eingeben"
@@ -114,24 +100,6 @@ async function onSubmit() {
                             placeholder="E-Mail-Adresse eingeben" :error="errors.email" @input="setTouched('email')" />
                         <FormTextarea v-model="contactForm.message" label="Nachricht" placeholder="Nachricht eingeben"
                             rows="4" :error="errors.message" @input="setTouched('message')" />
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Datei anhängen
-                                (optional)</label>
-                            <input
-                                type="file"
-                                @change="onFileSelected"
-                                ref="fileInputRef"
-                                class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
-                            />
-                            <button
-                                v-if="contactForm.file"
-                                type="button"
-                                @click="removeFile"
-                                class="mt-2 px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition-colors duration-200"
-                            >
-                                Datei entfernen
-                            </button>
-                        </div>
 
                         <div>
                             <button type="submit"
@@ -145,7 +113,5 @@ async function onSubmit() {
                 </div>
             </div>
         </div>
-        
     </div>
-
 </template>
