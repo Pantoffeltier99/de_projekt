@@ -83,25 +83,17 @@ async function onSubmit() {
         formData.append('subject', contactForm.subject);
         formData.append('email', contactForm.email);
         formData.append('message', contactForm.message);
-        if (contactForm.file) {
-            formData.append('file', contactForm.file, contactForm.file.name);
-        }
 
         try {
-            const response = await sendEmail(formData);
-            if (response.status === 200) {
-                successMessage.value = response.data.message;
-                showForm.value = false;
-                resetForm();
-            } else {
-                console.error('Fehler beim Senden der E-Mail:', response);
-            }
+            await sendEmail(formData);
+            successMessage.value = 'E-Mail erfolgreich gesendet!';
+            showForm.value = false;
+            resetForm();
         }
         catch (error) {
             console.error('Fehler beim Senden der E-Mail:', error);
+            alert('Fehler beim Senden der E-Mail. Bitte versuchen Sie es später erneut.');
         }
-    } else {
-        console.log('Formular ist ungültig. Bitte überprüfen Sie die Eingaben.');
     }
 }
 </script>
