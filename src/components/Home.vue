@@ -130,7 +130,7 @@
             <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
               <h3 class="text-3xl font-semibold text-center mb-2">Pfadfinder & Ranger*Rover</h3>
               <p class="text-center font-semibold p-1">ab 14 Jahren</p>
-              <p class="text-center font-semibold p-1">18:15 bis 19:45, Donnerstags</p>
+              <p class="text-center font-semibold p-1">16:30 bis 18:00, Freitags</p>
             </div>
           </div>
 

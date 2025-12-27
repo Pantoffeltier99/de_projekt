@@ -76,7 +76,7 @@
                     </div>
                     <div>
                         <p class="text-center font-semibold mt-2">Ab 14 Jahren</p>
-                        <p class="text-center font-semibold">Donnerstags 18:15 - 19:45</p>
+                        <p class="text-center font-semibold">Freitags 16:30 - 18:00</p>
                     </div>
                     <hr class="w-47 h-1 mx-auto rounded-sm dark:bg-blue-800 mb-2 mt-1">
                     <div>
