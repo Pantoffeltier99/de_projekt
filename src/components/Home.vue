@@ -89,86 +89,55 @@
         </button>
       </div>
 
-      <!-- Gruppenstunden -->
+            <!-- Gruppenstunden -->
       <div class="container mx-auto p-3 pt-24 mt-10">
         <h1 class="text-3xl md:text-5xl font-bold text-center text-blue-950">Gruppenstunden</h1>
         <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
         <div class="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 xl-gap-8">
 
-          <div v-reveal class="relative rounded-lg shadow-md overflow-hidden
-          transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-0">
-            <!-- Das Bild -->
-            <img src="@/assets/Wölflinge.png" class="w-full h-40 object-cover rounded-lg">
+          <router-link to="/gruppen" class="block">
+            <div v-reveal class="relative rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105
+            transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-0">
+              <!-- Das Bild -->
+              <img src="@/assets/Wölflinge.png" class="w-full h-40 object-cover rounded-lg">
 
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
-              <h3 class="text-3xl font-semibold text-center mb-2">Wölflinge</h3>
-              <p class="text-center font-semibold p-1">6 bis 10 Jahre</p>
-              <p class="text-center font-semibold p-1">16:45 bis 18:15, Donnerstags</p>
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
+                <h3 class="text-3xl font-semibold text-center mb-2">Wölflinge</h3>
+                <p class="text-center font-semibold p-1">6 bis 10 Jahre</p>
+                <p class="text-center font-semibold p-1">16:45 bis 18:15, Donnerstags</p>
+              </div>
             </div>
-          </div>
+          </router-link>
 
-          <div v-reveal class="relative rounded-lg shadow-md overflow-hidden
-          transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-150">
-            <!-- Das Bild -->
-            <img src="@\assets\Jupfi.png" class="w-full h-40 object-cover rounded-lg">
+          <router-link to="/gruppen" class="block">
+            <div v-reveal class="relative rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105
+            transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-150">
+              <!-- Das Bild -->
+              <img src="@\assets\Jupfi.png" class="w-full h-40 object-cover rounded-lg">
 
-            <!-- Jupfis -->
-            <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
-                <h3 class="text-3xl font-semibold text-center mb-2">Jungpfadfinder</h3>
-                <p class="text-center font-semibold p-1">11 bis 13 Jahre</p>
-                <p class="text-center font-semibold p-1">16:30 bis 18:00, Mitwochs</p>
+              <!-- Jupfis -->
+              <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
+                  <h3 class="text-3xl font-semibold text-center mb-2">Jungpfadfinder</h3>
+                  <p class="text-center font-semibold p-1">11 bis 13 Jahre</p>
+                  <p class="text-center font-semibold p-1">16:30 bis 18:00, Mitwochs</p>
+              </div>
             </div>
-          </div>
+          </router-link>
 
-          <div v-reveal class="relative rounded-lg shadow-md overflow-hidden
-          transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-300">
-            <!-- Das Bild -->
-            <img src="@/assets/PfadiRR.png" class="w-full h-40 object-cover rounded-lg">
+          <router-link to="/gruppen" class="block">
+            <div v-reveal class="relative rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105
+            transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-300">
+              <!-- Das Bild -->
+              <img src="@/assets/PfadiRR.png" class="w-full h-40 object-cover rounded-lg">
 
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
-              <h3 class="text-3xl font-semibold text-center mb-2">Pfadfinder & Ranger*Rover</h3>
-              <p class="text-center font-semibold p-1">ab 14 Jahren</p>
-              <p class="text-center font-semibold p-1">16:30 bis 18:00, Freitags</p>
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center p-4 text-white">
+                <h3 class="text-3xl font-semibold text-center mb-2">Pfadfinder & Ranger*Rover</h3>
+                <p class="text-center font-semibold p-1">ab 14 Jahren</p>
+                <p class="text-center font-semibold p-1">16:30 bis 18:00, Freitags</p>
+              </div>
             </div>
-          </div>
-
-        </div>
-      </div>
-
-      </div>
-        <div class="container mx-auto p-3 flex flex-col mb-10 items-center">
-          <button class="mt-0 px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition-colors">
-            <router-link
-                to="/gruppen"
-                class="font-bold text-white px-13 py-2 rounded transition-all duration-300 2xl:flex flex-col items-center group"
-                active-class="active-link"
-            >
-                Infos zu den Gruppenstunden
-            </router-link>
-          </button>
-        </div>
-      <div>
-
-      <div>
-        <div class="container mx-auto p-9 flex flex-col mt-10 md:mt-20 md:mb-20 mb-10 items-center">
-          <router-link
-            to="/mitmachen"
-            class="group"
-            active-class="active-link"
-          >
-            <button
-              class="w-full max-w-xs sm:max-w-sm md:max-w-md 
-                       px-8 md:px-10 py-7 md:py-9 
-                        text-4xl md:text-6xl
-                        font-bold text-white 
-                        bg-gradient-to-r from-blue-800 to-yellow-500 
-                        rounded-lg hover:from-blue-900 hover:to-yellow-600 transition-all duration-300
-                        animate-bounce"
-            >
-              MACH MIT!
-            </button>
           </router-link>
         </div>
       </div>
