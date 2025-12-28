@@ -61,10 +61,10 @@
                   <h1 class="text-3xl font-bold text-center">Wichtig</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
                   <div v-reveal class="bg-white shadow-md p-5 rounded-2xl  transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-300">
-                    <img src="https://as2.ftcdn.net/v2/jpg/01/62/17/79/1000_F_162177937_uTe0UImsLygFsJMkMooYagoBP55rK3B5.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
+                    <img src="https://muetterzentren-in-bayern.de/wp-content/uploads/2024/03/1EC5BB7E-A629-487B-8FEA-745DA0310225.png" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Ferien</h5>
                     <p class="text-jusify mt-2 mb-4">
-                        In den Oster finden keine Gruppenstunden statt.
+                        In den Osterferien finden keine Gruppenstunden statt.
                     </p>
                     <div class="mt-4 flex items-center justify-between">
                         <p class="text-sm text-gray-500 italic">Datum: 26.03.26 - 10.04.26</p>
