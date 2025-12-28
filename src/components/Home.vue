@@ -18,27 +18,27 @@
         <div class="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-4 md:gap-6 xl-gap-8">
 
           <!-- Kürzlich -->
-          <div>
-              <div class="mt-0 mb-0 rounded-2xl">
-                  <h1 class="text-3xl font-bold text-center">Kürzlich</h1>
-                  <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
-                  <div v-reveal class="bg-white shadow-md p-5 rounded-2xl transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-0">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
-                    <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
-                    <p class="text-jusify mt-2 mb-4">
-                        Dieses Jahr in den Sommerferien waren wir zusammen mit dem Stamm Heide zehn Tage auf der Burg Rieneck.
-                    </p>
-                    <div class="mt-4 flex items-center justify-between">
-                        <p class="text-sm text-gray-500 italic">Datum: 23.08.25 - 01.09.24</p>
-                        <p class="text-sm text-gray-500 italic">Rieneck</p>
+          <router-link to="/termine" class="block">
+                <div class="mt-0 mb-0 rounded-2xl transition-all duration-700 hover:scale-105">
+                    <h1 class="text-3xl font-bold text-center">Kürzlich</h1>
+                    <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
+                    <div v-reveal class="bg-white shadow-md p-5 rounded-2xl transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-0">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aerial_image_of_the_Rieneck_Castle.jpg/1200px-Aerial_image_of_the_Rieneck_Castle.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
+                      <h5 class="text-3xl font-bold mt-2 mb-4">Rieneck 2025</h5>
+                      <p class="text-jusify mt-2 mb-4">
+                          Dieses Jahr in den Sommerferien waren wir zusammen mit dem Stamm Heide zehn Tage auf der Burg Rieneck.
+                      </p>
+                      <div class="mt-4 flex items-center justify-between">
+                          <p class="text-sm text-gray-500 italic">Datum: 23.08.25 - 01.09.24</p>
+                          <p class="text-sm text-gray-500 italic">Rieneck</p>
+                      </div>
                     </div>
-                  </div>
-              </div>
-          </div>
+                </div>
+          </router-link>
 
           <!-- Kürzlich -->
-          <div>       
-              <div class="rounded-2xl">
+          <router-link to="/termine" class="block">       
+              <div class="rounded-2xl transition-all duration-700 hover:scale-105">
                   <h1 class="text-3xl font-bold text-center">Nächstes Lager</h1>
                   <hr class="h-1 mx-auto rounded-sm my-8 dark:bg-blue-800">
                   <div v-reveal class="bg-white shadow-md p-5 rounded-2xl transition-all duration-700 reveal-on-scroll opacity-0 scale-75 delay-150">
@@ -53,7 +53,7 @@
                     </div>
                   </div>
               </div>
-          </div>
+          </router-link>
 
           <!-- Wichtig -->
           <div>
@@ -64,10 +64,10 @@
                     <img src="https://as2.ftcdn.net/v2/jpg/01/62/17/79/1000_F_162177937_uTe0UImsLygFsJMkMooYagoBP55rK3B5.jpg" alt="Bundeslager 2022" class="w-full h-64 object-cover rounded-lg">
                     <h5 class="text-3xl font-bold mt-2 mb-4">Ferien</h5>
                     <p class="text-jusify mt-2 mb-4">
-                        In den Sommerferien finden keine Gruppenstunden statt, dafür sind wir mit den Jüngeren auf dem KiSoLa und mit allen älteren auf der Burg Rieneck.
+                        In den Oster finden keine Gruppenstunden statt.
                     </p>
                     <div class="mt-4 flex items-center justify-between">
-                        <p class="text-sm text-gray-500 italic">Datum: 28.07.25 - 05.09.25</p>
+                        <p class="text-sm text-gray-500 italic">Datum: 26.03.26 - 10.04.26</p>
                         <p class="text-sm text-gray-500 italic"></p>
                     </div>
                   </div>
