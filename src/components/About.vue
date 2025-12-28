@@ -28,7 +28,7 @@
         <p class="text-justify text-lg md:text-xl mb-6">
           Seit 1996 sind wir Teil der großen Pfadfinderbewegung und bieten Kindern und Jugendlichen die Möglichkeit, Gemeinschaft, Abenteuer und Natur hautnah zu erleben. In unseren regelmäßigen Gruppenstunden wird gespielt, gelacht, gewerkelt und gelernt – immer mit dem Ziel, die Welt ein Stück besser zu hinterlassen, als wir sie vorgefunden haben.
           <br>
-          Unser Zuhause ist das Alte Kutscherhaus in Satrup (Flensburger Straße 1), wo wir uns treffen, Pläne schmieden und gemeinsam aufbrechen – zu kleinen Abenteuern im Alltag oder großen Fahrten in die Ferne.
+          Unser Zuhause ist das Alte Kutscherhaus in Satrup (Flensburger Straße 1), wo wir uns treffen , Pläne schmieden und gemeinsam aufbrechen – zu kleinen Abenteuern im Alltag oder großen Fahrten in die Ferne.
         </p>
       </div>
     </div>
